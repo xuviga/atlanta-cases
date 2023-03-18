@@ -1,0 +1,14 @@
+name: Atlanta-cases
+main: org.xuvigan.atlantacases.PluginMain
+version: 1
+commands:
+   mpcaseshop:
+     description: LOL
+   mpcaseview:
+     description: LOL
+   rollcase:
+     description: LOL
+   casesreload:
+     description: LOL
+   mpmotd:
+     description: LOL
