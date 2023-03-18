@@ -15,12 +15,22 @@ repositories {
         name = "sonatype"
         url = "https://oss.sonatype.org/content/groups/public/"
     }
+    maven { url = 'https://plugins.gradle.org/m2/' }
+    maven { url = 'https://oss.sonatype.org/content/repositories/snapshots/' }
 }
+
+
 
 dependencies {
     compileOnly "org.spigotmc:spigot-api:1.12.2-R0.1-SNAPSHOT"
+    implementation files('/lib/iMine.jar')
+    implementation files('/lib/LuckPerms-Bukkit-5.1.87.jar')
+    implementation files('/lib/vault.jar')
 }
 
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
 def targetJavaVersion = 8
 java {
     def javaVersion = JavaVersion.toVersion(targetJavaVersion)

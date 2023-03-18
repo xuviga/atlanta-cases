@@ -18,6 +18,9 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.permissions.Permission;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
+import ru.imine.client.economy.Economy;
+import ru.imine.shared.AiMine;
+import ru.imine.shared.util.Discord;
 
 public class PluginMain extends JavaPlugin implements Listener {
     public static Permission permission = null;
@@ -25,6 +28,7 @@ public class PluginMain extends JavaPlugin implements Listener {
 
     public PluginMain() {
     }
+    Economy economy = getServer().getServicesManager().getRegistration(Economy.class).getProvider();
 
     private boolean setupPermissions() {
         RegisteredServiceProvider<Permission> permissionProvider = this.getServer().getServicesManager().getRegistration(Permission.class);
@@ -37,23 +41,22 @@ public class PluginMain extends JavaPlugin implements Listener {
 
     public void onEnable() {
         this.saveDefaultConfig();
-        this.getLogger().info("Im enabled");
+        Discord.instance.sendErrorLog("ATLANTA-HiTech", "Сервер был запущен!!!");
         this.setupPermissions();
         Bukkit.getPluginManager().registerEvents(this, this);
         Bukkit.getMessenger().registerOutgoingPluginChannel(this, "CasesListChanel");
         Bukkit.getMessenger().registerOutgoingPluginChannel(this, "CasesShopChanel");
         Bukkit.getMessenger().registerOutgoingPluginChannel(this, "CasesCurChanel");
-        this.config = this.getConfig();
-        this.getLogger().info("Case item drop 1 chance set to - " + this.config.getInt("Chance1"));
-        this.getLogger().info("Case item drop 2 chance set to - " + this.config.getInt("Chance2"));
-        this.getLogger().info("Case item drop 3 chance set to - " + this.config.getInt("Chance3"));
-        this.getLogger().info("Case item drop 4 chance set to - " + this.config.getInt("Chance4"));
-        this.getLogger().info("Case item drop 5 chance set to - " + this.config.getInt("Chance5"));
+        //this.config = this.getConfig();
+        //this.getLogger().info("Case item drop 1 chance set to - " + this.config.getInt("Chance1"));
+        //this.getLogger().info("Case item drop 2 chance set to - " + this.config.getInt("Chance2"));
+        //this.getLogger().info("Case item drop 3 chance set to - " + this.config.getInt("Chance3"));
+        //this.getLogger().info("Case item drop 4 chance set to - " + this.config.getInt("Chance4"));
+        //this.getLogger().info("Case item drop 5 chance set to - " + this.config.getInt("Chance5"));
     }
 
     public void onDisable() {
         this.saveDefaultConfig();
-        this.getLogger().info("Im disabled");
     }
 
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
@@ -211,23 +214,28 @@ public class PluginMain extends JavaPlugin implements Listener {
     }
 
     private void openCasesShop(Player target) {
+        Economy economy = getServer().getServicesManager().getRegistration(Economy.class).getProvider();
+        if (economy == null) {
+            target.sendMessage("Could not access economy system.");
+            return;
+        }
         ByteArrayDataOutput clear = ByteStreams.newDataOutput();
         clear.writeUTF("Clear");
         target.sendPluginMessage(getPlugin(PluginMain.class), "CasesShopChanel", clear.toByteArray());
-        this.getLogger().warning("PENIS? 275");
 
-        for(int i = 0; i < this.getCasesList().size(); ++i) {
+        for (int i = 0; i < this.getCasesList().size(); ++i) {
             ByteArrayDataOutput list = ByteStreams.newDataOutput();
             list.writeUTF(((Case)this.getCasesList().get(i)).getName() + "," + ((Case)this.getCasesList().get(i)).getPrice() + "," + ((Case)this.getCasesList().get(i)).getTexture());
             target.sendPluginMessage(getPlugin(PluginMain.class), "CasesListChanel", list.toByteArray());
-            this.getLogger().warning("PENIS? 281");
         }
-
         ByteArrayDataOutput open = ByteStreams.newDataOutput();
         open.writeUTF("Open");
         target.sendPluginMessage(getPlugin(PluginMain.class), "CasesShopChanel", open.toByteArray());
         this.getLogger().warning("PENIS? 287");
     }
+
+
+
 
     private void sendCasesListToPlayer(Player player) {
         player.sendMessage("privet");
@@ -294,4 +302,7 @@ public class PluginMain extends JavaPlugin implements Listener {
             this.player.getInventory().addItem(new ItemStack[]{this.is});
         }
     }
+
+
+
 }
