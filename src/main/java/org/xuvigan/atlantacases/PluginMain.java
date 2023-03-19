@@ -1,16 +1,21 @@
 package org.xuvigan.atlantacases;
-
 import com.google.common.io.ByteArrayDataOutput;
 import com.google.common.io.ByteStreams;
+
+import java.io.ByteArrayOutputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
+import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Listener;
@@ -19,42 +24,31 @@ import org.bukkit.permissions.Permission;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 import ru.imine.shared.util.Discord;
-
 public class PluginMain extends JavaPlugin implements Listener {
     public static Permission permission = null;
     private FileConfiguration config;
-
     public PluginMain() {
     }
-
-    private boolean setupPermissions() {
+    private void setupPermissions() {
         RegisteredServiceProvider<Permission> permissionProvider = this.getServer().getServicesManager().getRegistration(Permission.class);
         if (permissionProvider != null) {
             permission = (Permission)permissionProvider.getProvider();
         }
 
-        return permission != null;
     }
-
     public void onEnable() {
         this.saveDefaultConfig();
-        Discord.instance.sendErrorLog("ATLANTA-HiTech", "Сервер был запущен!!!");
+        this.getLogger().info("Im enabled");
         this.setupPermissions();
         Bukkit.getPluginManager().registerEvents(this, this);
         Bukkit.getMessenger().registerOutgoingPluginChannel(this, "CasesListChanel");
         Bukkit.getMessenger().registerOutgoingPluginChannel(this, "CasesShopChanel");
         Bukkit.getMessenger().registerOutgoingPluginChannel(this, "CasesCurChanel");
         this.config = this.getConfig();
-        this.getLogger().info("Case item drop 1 chance set to - " + this.config.getInt("Chance1"));
-        this.getLogger().info("Case item drop 2 chance set to - " + this.config.getInt("Chance2"));
-        this.getLogger().info("Case item drop 3 chance set to - " + this.config.getInt("Chance3"));
-        this.getLogger().info("Case item drop 4 chance set to - " + this.config.getInt("Chance4"));
-        this.getLogger().info("Case item drop 5 chance set to - " + this.config.getInt("Chance5"));
     }
 
     public void onDisable() {
         this.saveDefaultConfig();
-        this.getLogger().info("Im disabled");
     }
 
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
@@ -71,9 +65,14 @@ public class PluginMain extends JavaPlugin implements Listener {
         }
 
         if (command.getName().equalsIgnoreCase("mpmotd") && sender instanceof Player) {
-            ByteArrayDataOutput setWon = ByteStreams.newDataOutput();
-            setWon.writeUTF("SetMotd," + this.config.getString("MpMotd"));
-            ((Player)sender).getPlayer().sendPluginMessage(getPlugin(PluginMain.class), "CasesShopChanel", setWon.toByteArray());
+            ByteArrayOutputStream bos = new ByteArrayOutputStream();
+            DataOutputStream dos = new DataOutputStream(bos);
+            try {
+                dos.writeUTF("SetMotd," + this.config.getString("MpMotd"));
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+            ((Player)sender).getPlayer().sendPluginMessage(getPlugin(PluginMain.class), "CasesShopChanel", bos.toByteArray());
         }
 
         if (command.getName().equalsIgnoreCase("casesreload")) {
@@ -81,57 +80,110 @@ public class PluginMain extends JavaPlugin implements Listener {
                 if (sender.isOp()) {
                     this.reloadConfig();
                     this.config = this.getConfig();
-                    if (sender.getName().equalsIgnoreCase("Noire")) {
-                        sender.sendMessage(ChatColor.AQUA + "Кейсы перезагружаны. Глебка, шо ты там придумал? Крусаучег!");
-                    } else if (sender.getName().equalsIgnoreCase("Admin")) {
-                        sender.sendMessage(ChatColor.AQUA + "Кейсы перезагружаны. Саня, красава! Пили еще. Ты великолепен!)))");
-                    } else {
-                        sender.sendMessage(ChatColor.AQUA + "Кейсы перезагружаны.");
+                    if (sender.getName().equalsIgnoreCase("XuViGaN")) {
+                        sender.sendMessage(ChatColor.AQUA + "Кейсы перезагружаны");
                     }
                 }
             } else {
                 this.reloadConfig();
                 this.config = this.getConfig();
-                sender.sendMessage("Привет, владелец консоли. Кейсы я, конечно, перезагружу, но я бы ");
-                sender.sendMessage("не отказался стать владельцем пасса от фтп(((9 ");
             }
         }
 
         return false;
     }
-
     private Case getCaseById(int caseId) {
         for(int i = 0; i < this.getCasesList().size(); ++i) {
             if (i == caseId) {
                 return (Case)this.getCasesList().get(i);
             }
         }
+        return null;
+    }
+    private void setBalanceInDB(String name, int balance) {
+        try {
+            Connection connection = DriverManager.getConnection("jdbc:mysql://skala1.beget.tech:3306/skala1_atlanta?useSSL=false", "skala1_atlanta", "Alekcey2009@@");
+            PreparedStatement statement = connection.prepareStatement("UPDATE users SET balance_real = ? WHERE username = ?");
+            statement.setInt(1, balance);
+            statement.setString(2, name);
+            statement.executeUpdate();
+            statement.close();
+            connection.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 
+    private int getPlayerBalanceFromDB(String name) {
+        try {
+            Connection connection = DriverManager.getConnection("jdbc:mysql://skala1.beget.tech:3306/skala1_atlanta?useSSL=false", "skala1_atlanta", "Alekcey2009@@");
+            PreparedStatement statement = connection.prepareStatement("SELECT balance_real FROM users WHERE username = ?");
+            statement.setString(1, name);
+            ResultSet resultSet = statement.executeQuery();
+            int balance = 0;
+            if (resultSet.next()) {
+                balance = resultSet.getInt("balance_real");
+            }
+            resultSet.close();
+            statement.close();
+            connection.close();
+            return balance;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return 0;
+    }
+
+    public int getCasePrice(int casePrice) {
+        ConfigurationSection caseSection = getConfig().getConfigurationSection("Cases");
+        String caseName = getCaseNameById(casePrice);
+        if (caseSection.contains(caseName)) {
+            return caseSection.getInt(caseName + ".price");
+        } else {
+            // Кейс не найден в конфиге, возвращаем цену по умолчанию
+            return 0;
+        }
+    }
+
+    private String getCaseNameById(int casePrice) {
+        ConfigurationSection caseSection = getConfig().getConfigurationSection("Cases");
+        for (String caseName : caseSection.getKeys(false)) {
+            if (caseSection.getInt(caseName + ".id") == casePrice) {
+                return caseName;
+            }
+        }
         return null;
     }
 
     private void rollCase(Player target, int caseId) {
-        CaseItem ca = this.getRandomItemFromCase(caseId);
-        int rand = randInt(ca.getMinStackSize(), ca.getMaxStackSize());
-        ItemStack is = new ItemStack(Material.getMaterial(ca.getId()), rand, (short)((byte)ca.getMeta()));
-        (new AddItemDelay(target, is)).start();
-        ByteArrayDataOutput setWon = ByteStreams.newDataOutput();
-        setWon.writeUTF("SetWon," + ca.getId() + "," + ca.getMeta() + "," + rand + "," + ca.getRarity());
-        this.getLogger().info(ca.getRarity() + "");
-        target.sendPluginMessage(getPlugin(PluginMain.class), "CasesShopChanel", setWon.toByteArray());
-        ByteArrayDataOutput roll = ByteStreams.newDataOutput();
-        roll.writeUTF("RollCase");
-        target.sendPluginMessage(getPlugin(PluginMain.class), "CasesShopChanel", roll.toByteArray());
+        int casePrice = getCasePrice(caseId);
+        int playerBalance = getPlayerBalanceFromDB(target.getName());
+        if (playerBalance >= casePrice) {
+            CaseItem ca = this.getRandomItemFromCase(caseId);
+            int rand = randInt(ca.getMinStackSize(), ca.getMaxStackSize());
+            ItemStack is = new ItemStack(Material.getMaterial(ca.getId()), rand, (short)((byte)ca.getMeta()));
+            (new AddItemDelay(target, is)).start();
+            ByteArrayDataOutput setWon = ByteStreams.newDataOutput();
+            setWon.writeUTF("SetWon," + ca.getId() + "," + ca.getMeta() + "," + rand + "," + ca.getRarity());
+            this.getLogger().info(ca.getRarity() + "");
+            target.sendPluginMessage(getPlugin(PluginMain.class), "CasesShopChanel", setWon.toByteArray());
+            ByteArrayDataOutput roll = ByteStreams.newDataOutput();
+            roll.writeUTF("RollCase");
+            target.sendPluginMessage(getPlugin(PluginMain.class), "CasesShopChanel", roll.toByteArray());
+            setBalanceInDB(target.getName(), playerBalance - casePrice);
+        } else {
+            target.sendMessage("У вас недостаточно денег на балансе для покупки кейса!");
+        }
     }
 
     private CaseItem getRandomItemFromCase(int caseId) {
         this.getCaseItems(caseId);
-        List<CaseItem> itemsFin = new ArrayList();
-        List<CaseItem> items1 = new ArrayList();
-        List<CaseItem> items2 = new ArrayList();
-        List<CaseItem> items3 = new ArrayList();
-        List<CaseItem> items4 = new ArrayList();
-        List<CaseItem> items5 = new ArrayList();
+        List<CaseItem> itemsFin = new ArrayList<>();
+        List<CaseItem> items1 = new ArrayList<>();
+        List<CaseItem> items2 = new ArrayList<>();
+        List<CaseItem> items3 = new ArrayList<>();
+        List<CaseItem> items4 = new ArrayList<>();
+        List<CaseItem> items5 = new ArrayList<>();
 
         int i;
         for(i = 0; i < this.getCaseItems(caseId).size(); ++i) {
@@ -188,52 +240,46 @@ public class PluginMain extends JavaPlugin implements Listener {
         this.getLogger().info(itemsFin.size() + "s");
         return (CaseItem)itemsFin.get(randInt(0, itemsFin.size() - 1));
     }
-
     private void openCaseView(Player target, int caseId) {
         ByteArrayDataOutput clear = ByteStreams.newDataOutput();
         clear.writeUTF("ClearLast");
         target.sendPluginMessage(getPlugin(PluginMain.class), "CasesShopChanel", clear.toByteArray());
-        this.getLogger().warning("PENIS? 253");
-
         for(int i = 0; i < this.getCaseItems(caseId).size(); ++i) {
             List<CaseItem> items = this.getCaseItems(caseId);
-            this.getLogger().info(i + "Point");
             ByteArrayDataOutput list = ByteStreams.newDataOutput();
-            this.getLogger().info(((CaseItem)items.get(i)).getId() + "," + ((CaseItem)items.get(i)).getMeta() + "," + ((CaseItem)items.get(i)).getRarity());
             list.writeUTF(((CaseItem)items.get(i)).getId() + "," + ((CaseItem)items.get(i)).getMeta() + "," + ((CaseItem)items.get(i)).getRarity());
             target.sendPluginMessage(getPlugin(PluginMain.class), "CasesCurChanel", list.toByteArray());
-            this.getLogger().warning("PENIS? 262");
         }
 
         ByteArrayDataOutput open = ByteStreams.newDataOutput();
         open.writeUTF("Viev," + caseId);
         target.sendPluginMessage(getPlugin(PluginMain.class), "CasesShopChanel", open.toByteArray());
-        this.getLogger().warning("PENIS? 268");
     }
 
     private void openCasesShop(Player target) {
         ByteArrayDataOutput clear = ByteStreams.newDataOutput();
         clear.writeUTF("Clear");
         target.sendPluginMessage(getPlugin(PluginMain.class), "CasesShopChanel", clear.toByteArray());
-        this.getLogger().warning("PENIS? 275");
         for(int i = 0; i < this.getCasesList().size(); ++i) {
             ByteArrayDataOutput list = ByteStreams.newDataOutput();
             list.writeUTF(((Case)this.getCasesList().get(i)).getName() + "," + ((Case)this.getCasesList().get(i)).getPrice() + "," + ((Case)this.getCasesList().get(i)).getTexture());
             target.sendPluginMessage(getPlugin(PluginMain.class), "CasesListChanel", list.toByteArray());
-            this.getLogger().warning("PENIS? 281");
         }
         ByteArrayDataOutput open = ByteStreams.newDataOutput();
         open.writeUTF("Open");
         target.sendPluginMessage(getPlugin(PluginMain.class), "CasesShopChanel", open.toByteArray());
-        this.getLogger().warning("PENIS? 287");
     }
 
     private void sendCasesListToPlayer(Player player) {
-        player.sendMessage("privet");
+        StringBuilder message = new StringBuilder();
+        for(Case caseObj : this.getCasesList()) {
+            message.append(caseObj.getName()).append(": ").append(caseObj.getPrice()).append("\n");
+        }
+        player.sendMessage("Available cases:\n" + message.toString());
     }
 
     private List<Case> getCasesList() {
-        List<Case> cases = new ArrayList();
+        List<Case> cases = new ArrayList<>();
         List<String> list = this.config.getStringList("Cases");
         if (list.size() != 0) {
             for(int i = 0; i < list.size(); ++i) {
@@ -249,7 +295,7 @@ public class PluginMain extends JavaPlugin implements Listener {
     }
 
     private List<CaseItem> getCaseItems(int caseIdToget) {
-        List<CaseItem> items = new ArrayList();
+        List<CaseItem> items = new ArrayList<>();
         List<String> list = this.config.getStringList("CaseItems");
         if (list.size() != 0) {
             for(int i = 0; i < list.size(); ++i) {
@@ -268,12 +314,12 @@ public class PluginMain extends JavaPlugin implements Listener {
 
         return items;
     }
+
     public static int randInt(int min, int max) {
-        int randomNum = (new Random()).nextInt(max - min + 1) + min;
-        return randomNum;
+        return ThreadLocalRandom.current().nextInt(min, max + 1);
     }
 
-    class AddItemDelay extends Thread {
+    static class AddItemDelay extends Thread {
         Player player;
         ItemStack is;
 
@@ -283,13 +329,16 @@ public class PluginMain extends JavaPlugin implements Listener {
         }
 
         public void run() {
+            String playerName = player.getPlayerListName();
             try {
                 Thread.sleep(12000L);
             } catch (InterruptedException var2) {
                 var2.printStackTrace();
             }
-
-            this.player.getInventory().addItem(new ItemStack[]{this.is});
+            this.player.getInventory().addItem(this.is);
+            String message = playerName + " При открытии кейса получил: " + this.is.getType().toString();
+            Bukkit.getServer().broadcastMessage(message); //Отправляем сообщение в общий чат при получении предмета
+            Discord.instance.sendErrorLog("Открытие кейса", "Игрок " + playerName + " получил предмет: " + this.is.getType().toString()); //Отправляет информацию на закрытый канал для сбора информации
         }
     }
 
