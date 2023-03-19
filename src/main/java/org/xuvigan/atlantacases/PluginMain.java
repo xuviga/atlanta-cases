@@ -134,9 +134,9 @@ public class PluginMain extends JavaPlugin implements Listener {
         return 0;
     }
 
-    public int getCasePrice(int casePrice) {
+    public int getCasePrice(int caseId) {
         ConfigurationSection caseSection = getConfig().getConfigurationSection("Cases");
-        String caseName = getCaseNameById(casePrice);
+        String caseName = getCaseNameById(caseId);
         if (caseSection.contains(caseName)) {
             return caseSection.getInt(caseName + ".price");
         } else {
@@ -145,10 +145,10 @@ public class PluginMain extends JavaPlugin implements Listener {
         }
     }
 
-    private String getCaseNameById(int casePrice) {
+    private String getCaseNameById(int caseId) {
         ConfigurationSection caseSection = getConfig().getConfigurationSection("Cases");
         for (String caseName : caseSection.getKeys(false)) {
-            if (caseSection.getInt(caseName + ".id") == casePrice) {
+            if (caseSection.getInt(caseName + ".id") == caseId) {
                 return caseName;
             }
         }
@@ -281,37 +281,50 @@ public class PluginMain extends JavaPlugin implements Listener {
     private List<Case> getCasesList() {
         List<Case> cases = new ArrayList<>();
         List<String> list = this.config.getStringList("Cases");
-        if (list.size() != 0) {
-            for(int i = 0; i < list.size(); ++i) {
-                String[] sumon = ((String)list.get(i)).split(",");
+        if (list != null && !list.isEmpty() && config.contains("Cases")) {
+            for (String item : list) {
+                String[] sumon = item.split(",");
+                if (sumon.length != 3) {
+                    // обработка ошибки
+                    continue;
+                }
                 String name = sumon[0];
-                int price = Integer.parseInt(sumon[1]);
+                int price;
+                try {
+                    price = Integer.parseInt(sumon[1]);
+                } catch (NumberFormatException e) {
+                    // обработка ошибки
+                    continue;
+                }
                 String texture = sumon[2];
                 cases.add(new Case(name, price, texture));
             }
         }
-
         return cases;
     }
 
-    private List<CaseItem> getCaseItems(int caseIdToget) {
+    private List<CaseItem> getCaseItems(int caseIdToGet) {
         List<CaseItem> items = new ArrayList<>();
         List<String> list = this.config.getStringList("CaseItems");
-        if (list.size() != 0) {
-            for(int i = 0; i < list.size(); ++i) {
-                String[] sumon = ((String)list.get(i)).split(",");
-                int id = Integer.parseInt(sumon[0]);
-                int meta = Integer.parseInt(sumon[1]);
-                int rarity = Integer.parseInt(sumon[2]);
-                int minStackSize = Integer.parseInt(sumon[3]);
-                int maxStackSize = Integer.parseInt(sumon[4]);
-                int caseId = Integer.parseInt(sumon[5]);
-                if (caseId == caseIdToget) {
-                    items.add(new CaseItem(id, meta, rarity, minStackSize, maxStackSize, caseId));
+        // Проверка на пустой список
+        if (!list.isEmpty()) {
+            for (String str : list) {
+                String[] parts = str.split(",");
+                // Проверка на количество частей, чтобы избежать ошибки
+                if (parts.length == 6) {
+                    int id = Integer.parseInt(parts[0]);
+                    int meta = Integer.parseInt(parts[1]);
+                    int rarity = Integer.parseInt(parts[2]);
+                    int minStackSize = Integer.parseInt(parts[3]);
+                    int maxStackSize = Integer.parseInt(parts[4]);
+                    int caseId = Integer.parseInt(parts[5]);
+                    // Проверка на соответствие caseId, чтобы не добавлять ненужные CaseItem в список
+                    if (caseId == caseIdToGet) {
+                        items.add(new CaseItem(id, meta, rarity, minStackSize, maxStackSize, caseId));
+                    }
                 }
             }
         }
-
         return items;
     }
 
