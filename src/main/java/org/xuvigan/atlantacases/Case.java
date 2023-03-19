@@ -1,9 +1,9 @@
 package org.xuvigan.atlantacases;
 
 public class Case {
-    private String name;
-    private int price;
-    private String texture;
+    private final String name;
+    private final int price;
+    private final String texture;
 
     public Case(String name, int price, String texture) {
         this.name = name;
