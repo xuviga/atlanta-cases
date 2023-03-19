@@ -159,7 +159,7 @@ public class PluginMain extends JavaPlugin implements Listener {
         int casePrice = getCasePrice(caseId);
         int playerBalance = getPlayerBalanceFromDB(target.getName());
         if (playerBalance >= casePrice) {
-            CaseItem ca = this.getRandomItemFromCase(caseId);
+            CaseItem ca = this.getRandomItemFromCase();
             int rand = randInt(ca.getMinStackSize(), ca.getMaxStackSize());
             ItemStack is = new ItemStack(Material.getMaterial(ca.getId()), rand, (short)((byte)ca.getMeta()));
             (new AddItemDelay(target, is)).start();
@@ -176,8 +176,8 @@ public class PluginMain extends JavaPlugin implements Listener {
         }
     }
 
-    private CaseItem getRandomItemFromCase(int caseId) {
-        this.getCaseItems(caseId);
+    private CaseItem getRandomItemFromCase() {
+        this.getCaseItems();
         List<CaseItem> itemsFin = new ArrayList<>();
         List<CaseItem> items1 = new ArrayList<>();
         List<CaseItem> items2 = new ArrayList<>();
@@ -186,22 +186,22 @@ public class PluginMain extends JavaPlugin implements Listener {
         List<CaseItem> items5 = new ArrayList<>();
 
         int i;
-        for(i = 0; i < this.getCaseItems(caseId).size(); ++i) {
-            switch (((CaseItem)this.getCaseItems(caseId).get(i)).getRarity()) {
+        for(i = 0; i < this.getCaseItems().size(); ++i) {
+            switch (((CaseItem)this.getCaseItems().get(i)).getRarity()) {
                 case 1:
-                    items1.add(this.getCaseItems(caseId).get(i));
+                    items1.add(this.getCaseItems().get(i));
                     break;
                 case 2:
-                    items2.add(this.getCaseItems(caseId).get(i));
+                    items2.add(this.getCaseItems().get(i));
                     break;
                 case 3:
-                    items3.add(this.getCaseItems(caseId).get(i));
+                    items3.add(this.getCaseItems().get(i));
                     break;
                 case 4:
-                    items4.add(this.getCaseItems(caseId).get(i));
+                    items4.add(this.getCaseItems().get(i));
                     break;
                 case 5:
-                    items5.add(this.getCaseItems(caseId).get(i));
+                    items5.add(this.getCaseItems().get(i));
             }
         }
 
@@ -244,8 +244,8 @@ public class PluginMain extends JavaPlugin implements Listener {
         ByteArrayDataOutput clear = ByteStreams.newDataOutput();
         clear.writeUTF("ClearLast");
         target.sendPluginMessage(getPlugin(PluginMain.class), "CasesShopChanel", clear.toByteArray());
-        for(int i = 0; i < this.getCaseItems(caseId).size(); ++i) {
-            List<CaseItem> items = this.getCaseItems(caseId);
+        for(int i = 0; i < this.getCaseItems().size(); ++i) {
+            List<CaseItem> items = this.getCaseItems();
             ByteArrayDataOutput list = ByteStreams.newDataOutput();
             list.writeUTF(((CaseItem)items.get(i)).getId() + "," + ((CaseItem)items.get(i)).getMeta() + "," + ((CaseItem)items.get(i)).getRarity());
             target.sendPluginMessage(getPlugin(PluginMain.class), "CasesCurChanel", list.toByteArray());
@@ -303,29 +303,27 @@ public class PluginMain extends JavaPlugin implements Listener {
         return cases;
     }
 
-    private List<CaseItem> getCaseItems(int caseIdToGet) {
-        List<CaseItem> items = new ArrayList<>();
-        List<String> list = this.config.getStringList("CaseItems");
-        // Проверка на пустой список
-        if (!list.isEmpty()) {
-            for (String str : list) {
-                String[] parts = str.split(",");
-                // Проверка на количество частей, чтобы избежать ошибки
-                if (parts.length == 6) {
-                    int id = Integer.parseInt(parts[0]);
-                    int meta = Integer.parseInt(parts[1]);
-                    int rarity = Integer.parseInt(parts[2]);
-                    int minStackSize = Integer.parseInt(parts[3]);
-                    int maxStackSize = Integer.parseInt(parts[4]);
-                    int caseId = Integer.parseInt(parts[5]);
-                    // Проверка на соответствие caseId, чтобы не добавлять ненужные CaseItem в список
-                    if (caseId == caseIdToGet) {
-                        items.add(new CaseItem(id, meta, rarity, minStackSize, maxStackSize, caseId));
-                    }
-                }
+    private List<CaseItem> getCaseItems() {
+        List<ItemStack> items = new ArrayList<ItemStack>();
+
+        for (String itemString : getConfig().getStringList("CaseItems")) {
+            String[] itemParts = itemString.split(",");
+            int id = Integer.parseInt(itemParts[0]);
+            int data = Integer.parseInt(itemParts[1]);
+            int amount = Integer.parseInt(itemParts[2]);
+            int chance = Integer.parseInt(itemParts[3]);
+            int maxPerCase = Integer.parseInt(itemParts[4]);
+            int customData = Integer.parseInt(itemParts[5]);
+
+            // If it's a custom item, get the custom data
+            if (id == 422) {
+                data = customData;
             }
+
+            // Create the ItemStack and add it to the list
+            ItemStack itemStack = new ItemStack(id, amount, (short) data);
+            items.add(itemStack);
         }
-        return items;
     }
 
     public static int randInt(int min, int max) {
