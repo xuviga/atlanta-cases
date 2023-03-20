@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1375c105-193b-47d6-bd3f-ff44ceb9ee74" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/Cases.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/ColorHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/Events.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/Rolling.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/Strings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/gui/GuiCaseView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/gui/GuiCaseWon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/gui/GuiCasesShop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/gui/MPGui.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/model/ModelGuiCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/model/ModelItemCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/network/CasesListPacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/network/CasesMainPacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/network/CasesViewPacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/network/PacketsDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/network/Recieve.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/pojo/Case.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/pojo/CaseItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/server/Comma.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/server/ItemStackBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/server/JCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/server/JCaseItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/server/JCases.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/server/json/Enchants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/server/json/ItemStackAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/server/json/MaterialData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/cases/sounds.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/cases/sounds/rolling.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/cases/textures/gui/case.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/cases/textures/gui/case.pngba" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/cases/textures/gui/caseshoptexture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/cases/textures/gui/caseshoptexturecw.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/cases/textures/gui/caseshoptexturel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/cases/textures/gui/casesopened.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/cases/textures/gui/opctexture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/cases/textures/gui/opctextureu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/cases/textures/scroll.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mcmod.info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pack.mcmeta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/xuvigan/atlantacases/Case.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/xuvigan/atlantacases/CaseItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/xuvigan/atlantacases/MessageHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/xuvigan/atlantacases/PluginMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2NICVCwZ8im5I7vWZ75pWMxPuFZ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Gradle.cases [setupDecompWorkspace]">
+    <configuration name="cases [buildAll]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="buildAll" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="cases [setupDecompWorkspace]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="setupDecompWorkspace" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.cases [setupDecompWorkspace]" />
+        <item itemvalue="Gradle.cases [buildAll]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1375c105-193b-47d6-bd3f-ff44ceb9ee74" name="Changes" comment="" />
+      <created>1679342235440</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1679342235440</updated>
+      <workItem from="1679342237746" duration="72000" />
+      <workItem from="1679342360293" duration="118000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

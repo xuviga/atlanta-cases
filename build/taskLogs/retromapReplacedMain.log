@@ -1,0 +1,987 @@
+Processing 26 files
+Start Processing: ru/will0376/cases/Cases.java
+New Key: class net/minecraftforge/fml/common/Mod
+New Key: class net/minecraftforge/fml/common/Mod
+New Key: class ru/will0376/cases/network/CasesMainPacket
+New Key: class ru/will0376/cases/network/CasesListPacket
+New Key: class ru/will0376/cases/network/CasesViewPacket
+New Key: class net/minecraftforge/fml/common/Mod
+New Key: class net/minecraftforge/fml/common/Mod
+New Key: class net/minecraftforge/fml/common/Mod
+Import: net.minecraft.client.settings.KeyBinding
+Import: net.minecraftforge.fml.client.registry.ClientRegistry
+Import: net.minecraftforge.fml.common.Mod
+Import: net.minecraftforge.fml.common.event.FMLInitializationEvent
+Import: net.minecraftforge.fml.common.event.FMLPostInitializationEvent
+Import: net.minecraftforge.fml.common.event.FMLPreInitializationEvent
+Import: net.minecraftforge.fml.common.event.FMLServerStartingEvent
+Import: net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper
+Import: net.minecraftforge.fml.relauncher.Side
+Import: org.lwjgl.input.Keyboard
+Import: ru.justagod.cutter.GradleSide
+Import: ru.justagod.cutter.GradleSideOnly
+Import: ru.justagod.cutter.invoke.Invoke
+Import: ru.will0376.cases.network.CasesListPacket
+Import: ru.will0376.cases.network.CasesMainPacket
+Import: ru.will0376.cases.network.CasesViewPacket
+Import: ru.will0376.cases.server.Comma
+Import: ru.will0376.cases.server.JCases
+Import: java.io.File
+End  Processing: ru/will0376/cases/Cases.java
+
+Start Processing: ru/will0376/cases/ColorHelper.java
+Import: java.awt.*
+End  Processing: ru/will0376/cases/ColorHelper.java
+
+Start Processing: ru/will0376/cases/Events.java
+New Key: class net/minecraftforge/fml/common/Mod
+New Key: class net/minecraftforge/fml/common/gameevent/InputEvent
+Rename method net/minecraft/client/settings/KeyBinding/isPressed ()Z[479,488]::isPressed->func_151468_f
+Rename method net/minecraft/client/Minecraft/getMinecraft ()Lnet/minecraft/client/Minecraft;[512,524]::getMinecraft->func_71410_x
+Rename field net/minecraft/client/Minecraft/player[527,533]::player->field_71439_g
+Rename method net/minecraft/client/entity/EntityPlayerSP/sendChatMessage (Ljava/lang/String;)V[541,556]::sendChatMessage->func_71165_d
+New Key: class net/minecraftforge/event/RegistryEvent
+Import: net.minecraft.client.Minecraft
+Import: net.minecraft.util.SoundEvent
+Import: net.minecraftforge.event.RegistryEvent
+Import: net.minecraftforge.fml.common.Mod
+Import: net.minecraftforge.fml.common.eventhandler.SubscribeEvent
+Import: net.minecraftforge.fml.common.gameevent.InputEvent
+End  Processing: ru/will0376/cases/Events.java
+
+Start Processing: ru/will0376/cases/Rolling.java
+Import: net.minecraft.util.ResourceLocation
+Import: net.minecraft.util.SoundEvent
+End  Processing: ru/will0376/cases/Rolling.java
+
+Start Processing: ru/will0376/cases/Strings.java
+End  Processing: ru/will0376/cases/Strings.java
+
+Start Processing: ru/will0376/cases/gui/GuiCaseView.java
+Rename method net/minecraft/client/Minecraft/getMinecraft ()Lnet/minecraft/client/Minecraft;[1077,1089]::getMinecraft->func_71410_x
+Rename method net/minecraft/client/Minecraft/getRenderItem ()Lnet/minecraft/client/renderer/RenderItem;[1092,1105]::getRenderItem->func_175599_af
+FOUND CONSTR method ru/will0376/cases/gui/GuiCaseView/GuiCaseView (Ljava/lang/String;)V ru/will0376/cases/gui/GuiCaseView
+Rename method net/minecraft/client/gui/GuiScreen/drawScreen (IIF)V[2041,2051]::drawScreen->func_73863_a
+Rename method net/minecraft/client/gui/GuiScreen/drawScreen (IIF)V[2096,2106]::drawScreen->func_73863_a
+Rename method net/minecraft/client/gui/GuiScreen/drawDefaultBackground ()V[2135,2156]::drawDefaultBackground->func_146276_q_
+Rename field net/minecraft/client/gui/GuiScreen/width[2177,2182]::width->field_146294_l
+Rename field net/minecraft/client/gui/GuiScreen/height[2227,2233]::height->field_146295_m
+Rename field net/minecraft/client/gui/GuiScreen/mc[2322,2324]::mc->field_146297_k
+Rename field net/minecraft/client/Minecraft/renderEngine[2337,2349]::renderEngine->field_71446_o
+Rename method net/minecraft/client/renderer/texture/TextureManager/bindTexture (Lnet/minecraft/util/ResourceLocation;)V[2351,2362]::bindTexture->func_110577_a
+Rename method net/minecraft/client/gui/Gui/drawTexturedModalRect (IIIIII)V[2447,2468]::drawTexturedModalRect->func_73729_b
+Rename method net/minecraft/client/gui/Gui/drawTexturedModalRect (IIIIII)V[2547,2568]::drawTexturedModalRect->func_73729_b
+New Key: class ru/will0376/cases/gui/MPGui
+Rename field net/minecraft/client/gui/GuiScreen/mc[2784,2786]::mc->field_146297_k
+Rename field net/minecraft/client/Minecraft/renderEngine[2799,2811]::renderEngine->field_71446_o
+Rename method net/minecraft/client/renderer/texture/TextureManager/bindTexture (Lnet/minecraft/util/ResourceLocation;)V[2813,2824]::bindTexture->func_110577_a
+Rename method net/minecraft/client/gui/Gui/drawTexturedModalRect (IIIIII)V[3052,3073]::drawTexturedModalRect->func_73729_b
+Rename method net/minecraft/client/gui/Gui/drawTexturedModalRect (IIIIII)V[3148,3169]::drawTexturedModalRect->func_73729_b
+Rename field net/minecraft/client/gui/GuiScreen/mc[3349,3351]::mc->field_146297_k
+Rename field net/minecraft/client/Minecraft/player[3364,3370]::player->field_71439_g
+Rename method net/minecraft/client/entity/EntityPlayerSP/sendChatMessage (Ljava/lang/String;)V[3378,3393]::sendChatMessage->func_71165_d
+New Key: class ru/will0376/cases/gui/MPGui
+Rename field net/minecraft/client/gui/GuiScreen/mc[3953,3955]::mc->field_146297_k
+Rename field net/minecraft/client/Minecraft/renderEngine[3968,3980]::renderEngine->field_71446_o
+Rename method net/minecraft/client/renderer/texture/TextureManager/bindTexture (Lnet/minecraft/util/ResourceLocation;)V[3982,3993]::bindTexture->func_110577_a
+Rename method net/minecraft/client/gui/Gui/drawTexturedModalRect (IIIIII)V[4083,4104]::drawTexturedModalRect->func_73729_b
+New Key: class ru/will0376/cases/gui/MPGui
+Rename field net/minecraft/client/gui/GuiScreen/mc[4439,4441]::mc->field_146297_k
+Rename field net/minecraft/client/Minecraft/renderEngine[4454,4466]::renderEngine->field_71446_o
+Rename method net/minecraft/client/renderer/texture/TextureManager/bindTexture (Lnet/minecraft/util/ResourceLocation;)V[4468,4479]::bindTexture->func_110577_a
+Rename method net/minecraft/client/gui/Gui/drawTexturedModalRect (IIIIII)V[4566,4587]::drawTexturedModalRect->func_73729_b
+New Key: class ru/will0376/cases/gui/MPGui
+Rename method net/minecraft/client/gui/GuiScreen/onGuiClosed ()V[5056,5067]::onGuiClosed->func_146281_b
+Rename field net/minecraft/client/gui/GuiScreen/mc[5214,5216]::mc->field_146297_k
+Rename method net/minecraft/client/gui/ScaledResolution/getScaleFactor ()I[5258,5272]::getScaleFactor->func_78325_e
+Rename field net/minecraft/client/gui/GuiScreen/width[5298,5303]::width->field_146294_l
+Rename field net/minecraft/client/gui/GuiScreen/height[5348,5354]::height->field_146295_m
+Rename field net/minecraft/client/gui/GuiScreen/height[5480,5486]::height->field_146295_m
+Rename field net/minecraft/client/gui/GuiScreen/mc[5582,5584]::mc->field_146297_k
+Rename field net/minecraft/client/Minecraft/renderEngine[5597,5609]::renderEngine->field_71446_o
+Rename method net/minecraft/client/renderer/texture/TextureManager/bindTexture (Lnet/minecraft/util/ResourceLocation;)V[5611,5622]::bindTexture->func_110577_a
+Rename method net/minecraft/client/gui/Gui/drawTexturedModalRect (IIIIII)V[6086,6107]::drawTexturedModalRect->func_73729_b
+Rename method net/minecraft/client/gui/Gui/drawTexturedModalRect (IIIIII)V[6625,6646]::drawTexturedModalRect->func_73729_b
+Rename method net/minecraft/item/ItemStack/getDisplayName ()Ljava/lang/String;[7029,7043]::getDisplayName->func_82833_r
+Rename method net/minecraft/item/ItemStack/getDisplayName ()Ljava/lang/String;[7099,7113]::getDisplayName->func_82833_r
+New Key: class ru/will0376/cases/gui/MPGui
+Rename method net/minecraft/item/ItemStack/getDisplayName ()Ljava/lang/String;[7309,7323]::getDisplayName->func_82833_r
+New Key: class ru/will0376/cases/gui/MPGui
+Rename field net/minecraft/client/gui/GuiScreen/mc[7467,7469]::mc->field_146297_k
+Rename field net/minecraft/client/Minecraft/renderEngine[7482,7494]::renderEngine->field_71446_o
+Rename method net/minecraft/client/renderer/texture/TextureManager/bindTexture (Lnet/minecraft/util/ResourceLocation;)V[7496,7507]::bindTexture->func_110577_a
+Rename field net/minecraft/client/gui/GuiScreen/mc[7741,7743]::mc->field_146297_k
+Rename field net/minecraft/client/Minecraft/renderEngine[7756,7768]::renderEngine->field_71446_o
+Rename method net/minecraft/client/renderer/texture/TextureManager/bindTexture (Lnet/minecraft/util/ResourceLocation;)V[7770,7781]::bindTexture->func_110577_a
+Rename method net/minecraft/client/gui/Gui/drawTexturedModalRect (IIIIII)V[7865,7886]::drawTexturedModalRect->func_73729_b
+Rename method net/minecraft/item/ItemStack/copy ()Lnet/minecraft/item/ItemStack;[8390,8394]::copy->func_77946_l
+Rename method net/minecraft/item/ItemStack/getCount ()I[8449,8457]::getCount->func_190916_E
+Rename field net/minecraft/client/gui/GuiScreen/mc[8676,8678]::mc->field_146297_k
+Rename field net/minecraft/client/Minecraft/renderEngine[8691,8703]::renderEngine->field_71446_o
+Rename method net/minecraft/client/renderer/texture/TextureManager/bindTexture (Lnet/minecraft/util/ResourceLocation;)V[8705,8716]::bindTexture->func_110577_a
+Rename field net/minecraft/client/gui/GuiScreen/mc[8944,8946]::mc->field_146297_k
+Rename field net/minecraft/client/Minecraft/renderEngine[8959,8971]::renderEngine->field_71446_o
+Rename method net/minecraft/client/renderer/texture/TextureManager/bindTexture (Lnet/minecraft/util/ResourceLocation;)V[8973,8984]::bindTexture->func_110577_a
+Rename method net/minecraft/client/gui/Gui/drawTexturedModalRect (IIIIII)V[9077,9098]::drawTexturedModalRect->func_73729_b
+Rename method net/minecraft/client/gui/Gui/drawTexturedModalRect (IIIIII)V[9410,9431]::drawTexturedModalRect->func_73729_b
+Rename method net/minecraft/client/gui/Gui/drawTexturedModalRect (IIIIII)V[9629,9650]::drawTexturedModalRect->func_73729_b
+Rename method net/minecraft/item/ItemStack/getDisplayName ()Ljava/lang/String;[10066,10080]::getDisplayName->func_82833_r
+New Key: class ru/will0376/cases/gui/MPGui
+New Key: class ru/will0376/cases/gui/MPGui
+New Key: class ru/will0376/cases/gui/MPGui
+New Key: class ru/will0376/cases/gui/MPGui
+Rename method net/minecraft/client/gui/GuiScreen/drawDefaultBackground ()V[11519,11540]::drawDefaultBackground->func_146276_q_
+Rename field net/minecraft/client/gui/GuiScreen/mc[11597,11599]::mc->field_146297_k
+Rename method net/minecraft/client/gui/ScaledResolution/getScaleFactor ()I[11641,11655]::getScaleFactor->func_78325_e
+Rename field net/minecraft/client/gui/GuiScreen/width[11730,11735]::width->field_146294_l
+Rename field net/minecraft/client/gui/GuiScreen/height[11785,11791]::height->field_146295_m
+Rename field net/minecraft/client/gui/GuiScreen/mc[11948,11950]::mc->field_146297_k
+Rename field net/minecraft/client/Minecraft/renderEngine[11963,11975]::renderEngine->field_71446_o
+Rename method net/minecraft/client/renderer/texture/TextureManager/bindTexture (Lnet/minecraft/util/ResourceLocation;)V[11977,11988]::bindTexture->func_110577_a
+Rename method net/minecraft/client/gui/Gui/drawTexturedModalRect (IIIIII)V[12066,12087]::drawTexturedModalRect->func_73729_b
+Rename method net/minecraft/client/gui/Gui/drawTexturedModalRect (IIIIII)V[12260,12281]::drawTexturedModalRect->func_73729_b
+Rename method net/minecraft/client/gui/Gui/drawCenteredString (Lnet/minecraft/client/gui/FontRenderer;Ljava/lang/String;III)V[12497,12515]::drawCenteredString->func_73732_a
+Rename field net/minecraft/client/gui/GuiScreen/fontRenderer[12516,12528]::fontRenderer->field_146289_q
+Rename method net/minecraft/item/ItemStack/getDisplayName ()Ljava/lang/String;[12547,12561]::getDisplayName->func_82833_r
+Rename field net/minecraft/client/gui/GuiScreen/width[12569,12574]::width->field_146294_l
+Rename field net/minecraft/client/gui/GuiScreen/mc[12624,12626]::mc->field_146297_k
+Rename field net/minecraft/client/Minecraft/renderEngine[12639,12651]::renderEngine->field_71446_o
+Rename method net/minecraft/client/renderer/texture/TextureManager/bindTexture (Lnet/minecraft/util/ResourceLocation;)V[12653,12664]::bindTexture->func_110577_a
+Rename method net/minecraft/client/gui/Gui/drawTexturedModalRect (IIIIII)V[12857,12878]::drawTexturedModalRect->func_73729_b
+Rename method net/minecraft/client/gui/Gui/drawTexturedModalRect (IIIIII)V[12956,12977]::drawTexturedModalRect->func_73729_b
+Rename field net/minecraft/client/gui/GuiScreen/mc[13123,13125]::mc->field_146297_k
+Rename method net/minecraft/client/Minecraft/displayGuiScreen (Lnet/minecraft/client/gui/GuiScreen;)V[13138,13154]::displayGuiScreen->func_147108_a
+New Key: class ru/will0376/cases/gui/MPGui
+Rename method net/minecraft/item/ItemStack/copy ()Lnet/minecraft/item/ItemStack;[14003,14007]::copy->func_77946_l
+Rename method net/minecraft/item/ItemStack/setItemDamage (I)V[14029,14042]::setItemDamage->func_77964_b
+Rename method net/minecraft/item/ItemStack/getMetadata ()I[14057,14068]::getMetadata->func_77960_j
+Rename method net/minecraft/item/ItemStack/setCount (I)V[14084,14092]::setCount->func_190920_e
+Rename field net/minecraft/client/gui/GuiScreen/mc[14154,14156]::mc->field_146297_k
+Rename field net/minecraft/client/Minecraft/world[14169,14174]::world->field_71441_e
+Rename field net/minecraft/entity/item/EntityItem/hoverStart[14225,14235]::hoverStart->field_70290_d
+Rename field net/minecraft/client/gui/GuiScreen/height[14318,14324]::height->field_146295_m
+Rename field net/minecraft/client/gui/GuiScreen/mc[14539,14541]::mc->field_146297_k
+Rename field net/minecraft/client/Minecraft/renderEngine[14554,14566]::renderEngine->field_71446_o
+Rename method net/minecraft/client/renderer/texture/TextureManager/bindTexture (Lnet/minecraft/util/ResourceLocation;)V[14568,14579]::bindTexture->func_110577_a
+Rename field net/minecraft/client/gui/GuiScreen/width[14686,14691]::width->field_146294_l
+Rename field net/minecraft/client/gui/GuiScreen/height[14726,14732]::height->field_146295_m
+Rename method net/minecraft/client/renderer/RenderHelper/disableStandardItemLighting ()V[15006,15033]::disableStandardItemLighting->func_74518_a
+Rename field net/minecraft/client/gui/GuiScreen/mc[15276,15278]::mc->field_146297_k
+Rename method net/minecraft/client/Minecraft/getRenderManager ()Lnet/minecraft/client/renderer/entity/RenderManager;[15291,15307]::getRenderManager->func_175598_ae
+Rename method net/minecraft/client/renderer/entity/RenderManager/renderEntity (Lnet/minecraft/entity/Entity;DDDFFZ)V[15308,15320]::renderEntity->func_188391_a
+Rename field net/minecraft/client/gui/GuiScreen/width[15589,15594]::width->field_146294_l
+Rename field net/minecraft/client/gui/GuiScreen/height[15630,15636]::height->field_146295_m
+Rename field net/minecraft/client/gui/GuiScreen/width[15730,15735]::width->field_146294_l
+Rename field net/minecraft/client/gui/GuiScreen/height[15778,15784]::height->field_146295_m
+Rename field net/minecraft/client/gui/GuiScreen/fontRenderer[15880,15892]::fontRenderer->field_146289_q
+Rename method net/minecraft/client/gui/FontRenderer/drawString (Ljava/lang/String;III)I[15895,15905]::drawString->func_78276_b
+Import: net.minecraft.client.Minecraft
+Import: net.minecraft.client.gui.ScaledResolution
+Import: net.minecraft.client.renderer.RenderHelper
+Import: net.minecraft.client.renderer.RenderItem
+Import: net.minecraft.entity.item.EntityItem
+Import: net.minecraft.item.ItemStack
+Import: net.minecraft.util.ResourceLocation
+Import: net.minecraft.util.text.TextFormatting
+Import: org.lwjgl.opengl.GL11
+Import: ru.will0376.cases.ColorHelper
+Import: ru.will0376.cases.Strings
+Import: ru.will0376.cases.model.ModelGuiCase
+Import: ru.will0376.cases.network.PacketsDecoder
+Import: ru.will0376.cases.network.Recieve
+Import: ru.will0376.cases.pojo.CaseItem
+Import: java.awt.*
+Import: java.util.List
+Import: java.util.Random
+End  Processing: ru/will0376/cases/gui/GuiCaseView.java
+
+Start Processing: ru/will0376/cases/gui/GuiCaseWon.java
+Rename method net/minecraft/client/Minecraft/getMinecraft ()Lnet/minecraft/client/Minecraft;[743,755]::getMinecraft->func_71410_x
+Rename method net/minecraft/client/Minecraft/getRenderItem ()Lnet/minecraft/client/renderer/RenderItem;[758,771]::getRenderItem->func_175599_af
+FOUND CONSTR method ru/will0376/cases/gui/GuiCaseWon/GuiCaseWon (Lnet/minecraft/item/ItemStack;I)V ru/will0376/cases/gui/GuiCaseWon
+Rename method net/minecraft/item/ItemStack/getCount ()I[988,996]::getCount->func_190916_E
+Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[1053,1060]::getItem->func_77973_b
+Rename method net/minecraft/client/gui/GuiScreen/drawScreen (IIF)V[1097,1107]::drawScreen->func_73863_a
+Rename method net/minecraft/client/gui/GuiScreen/drawScreen (IIF)V[1152,1162]::drawScreen->func_73863_a
+Rename method net/minecraft/client/gui/GuiScreen/drawDefaultBackground ()V[1191,1212]::drawDefaultBackground->func_146276_q_
+Rename field net/minecraft/client/gui/GuiScreen/mc[1269,1271]::mc->field_146297_k
+Rename method net/minecraft/client/gui/ScaledResolution/getScaleFactor ()I[1313,1327]::getScaleFactor->func_78325_e
+Rename field net/minecraft/client/gui/GuiScreen/width[1402,1407]::width->field_146294_l
+Rename field net/minecraft/client/gui/GuiScreen/height[1457,1463]::height->field_146295_m
+Rename field net/minecraft/client/gui/GuiScreen/mc[1989,1991]::mc->field_146297_k
+Rename field net/minecraft/client/Minecraft/renderEngine[2004,2016]::renderEngine->field_71446_o
+Rename method net/minecraft/client/renderer/texture/TextureManager/bindTexture (Lnet/minecraft/util/ResourceLocation;)V[2018,2029]::bindTexture->func_110577_a
+Rename method net/minecraft/client/gui/Gui/drawTexturedModalRect (IIIIII)V[2107,2128]::drawTexturedModalRect->func_73729_b
+Rename method net/minecraft/client/gui/Gui/drawCenteredString (Lnet/minecraft/client/gui/FontRenderer;Ljava/lang/String;III)V[2294,2312]::drawCenteredString->func_73732_a
+Rename field net/minecraft/client/gui/GuiScreen/fontRenderer[2313,2325]::fontRenderer->field_146289_q
+Rename method net/minecraft/item/ItemStack/getDisplayName ()Ljava/lang/String;[2344,2358]::getDisplayName->func_82833_r
+Rename field net/minecraft/client/gui/GuiScreen/width[2366,2371]::width->field_146294_l
+Rename field net/minecraft/client/gui/GuiScreen/mc[2421,2423]::mc->field_146297_k
+Rename field net/minecraft/client/Minecraft/renderEngine[2436,2448]::renderEngine->field_71446_o
+Rename method net/minecraft/client/renderer/texture/TextureManager/bindTexture (Lnet/minecraft/util/ResourceLocation;)V[2450,2461]::bindTexture->func_110577_a
+Rename method net/minecraft/client/gui/Gui/drawTexturedModalRect (IIIIII)V[2654,2675]::drawTexturedModalRect->func_73729_b
+Rename method net/minecraft/client/gui/Gui/drawTexturedModalRect (IIIIII)V[2753,2774]::drawTexturedModalRect->func_73729_b
+Rename field net/minecraft/client/gui/GuiScreen/mc[2920,2922]::mc->field_146297_k
+Rename method net/minecraft/client/Minecraft/displayGuiScreen (Lnet/minecraft/client/gui/GuiScreen;)V[2935,2951]::displayGuiScreen->func_147108_a
+New Key: class ru/will0376/cases/gui/MPGui
+Rename field net/minecraft/client/gui/GuiScreen/mc[3848,3850]::mc->field_146297_k
+Rename field net/minecraft/client/Minecraft/world[3863,3868]::world->field_71441_e
+Rename field net/minecraft/entity/item/EntityItem/hoverStart[3931,3941]::hoverStart->field_70290_d
+Rename field net/minecraft/client/gui/GuiScreen/height[4024,4030]::height->field_146295_m
+Rename field net/minecraft/client/gui/GuiScreen/mc[4245,4247]::mc->field_146297_k
+Rename field net/minecraft/client/Minecraft/renderEngine[4260,4272]::renderEngine->field_71446_o
+Rename method net/minecraft/client/renderer/texture/TextureManager/bindTexture (Lnet/minecraft/util/ResourceLocation;)V[4274,4285]::bindTexture->func_110577_a
+Rename field net/minecraft/client/gui/GuiScreen/width[4392,4397]::width->field_146294_l
+Rename field net/minecraft/client/gui/GuiScreen/height[4432,4438]::height->field_146295_m
+Rename method net/minecraft/client/renderer/RenderHelper/disableStandardItemLighting ()V[4712,4739]::disableStandardItemLighting->func_74518_a
+Rename field net/minecraft/client/gui/GuiScreen/mc[4982,4984]::mc->field_146297_k
+Rename method net/minecraft/client/Minecraft/getRenderManager ()Lnet/minecraft/client/renderer/entity/RenderManager;[4997,5013]::getRenderManager->func_175598_ae
+Rename method net/minecraft/client/renderer/entity/RenderManager/renderEntity (Lnet/minecraft/entity/Entity;DDDFFZ)V[5014,5026]::renderEntity->func_188391_a
+Rename field net/minecraft/client/gui/GuiScreen/width[5295,5300]::width->field_146294_l
+Rename field net/minecraft/client/gui/GuiScreen/height[5336,5342]::height->field_146295_m
+Rename field net/minecraft/client/gui/GuiScreen/width[5436,5441]::width->field_146294_l
+Rename field net/minecraft/client/gui/GuiScreen/height[5484,5490]::height->field_146295_m
+Rename field net/minecraft/client/gui/GuiScreen/fontRenderer[5592,5604]::fontRenderer->field_146289_q
+Rename method net/minecraft/client/gui/FontRenderer/drawString (Ljava/lang/String;III)I[5607,5617]::drawString->func_78276_b
+Rename method net/minecraft/client/gui/GuiScreen/doesGuiPauseGame ()Z[5918,5934]::doesGuiPauseGame->func_73868_f
+Import: net.minecraft.client.Minecraft
+Import: net.minecraft.client.gui.ScaledResolution
+Import: net.minecraft.client.renderer.RenderHelper
+Import: net.minecraft.client.renderer.RenderItem
+Import: net.minecraft.entity.item.EntityItem
+Import: net.minecraft.item.ItemStack
+Import: net.minecraft.util.ResourceLocation
+Import: net.minecraft.util.text.TextFormatting
+Import: org.lwjgl.opengl.GL11
+Import: ru.will0376.cases.model.ModelGuiCase
+Import: java.awt.*
+End  Processing: ru/will0376/cases/gui/GuiCaseWon.java
+
+Start Processing: ru/will0376/cases/gui/GuiCasesShop.java
+Rename method net/minecraft/client/gui/GuiScreen/drawScreen (IIF)V[446,456]::drawScreen->func_73863_a
+Rename method net/minecraft/client/gui/GuiScreen/drawScreen (IIF)V[501,511]::drawScreen->func_73863_a
+Rename field net/minecraft/client/gui/GuiScreen/mc[588,590]::mc->field_146297_k
+Rename method net/minecraft/client/gui/ScaledResolution/getScaleFactor ()I[632,646]::getScaleFactor->func_78325_e
+Rename field net/minecraft/client/gui/GuiScreen/width[672,677]::width->field_146294_l
+Rename field net/minecraft/client/gui/GuiScreen/height[722,728]::height->field_146295_m
+Rename field net/minecraft/client/gui/GuiScreen/mc[761,763]::mc->field_146297_k
+Rename field net/minecraft/client/Minecraft/renderEngine[776,788]::renderEngine->field_71446_o
+Rename method net/minecraft/client/renderer/texture/TextureManager/bindTexture (Lnet/minecraft/util/ResourceLocation;)V[790,801]::bindTexture->func_110577_a
+Rename method net/minecraft/client/gui/Gui/drawTexturedModalRect (IIIIII)V[881,902]::drawTexturedModalRect->func_73729_b
+Rename field net/minecraft/client/gui/GuiScreen/height[1189,1195]::height->field_146295_m
+Rename field net/minecraft/client/gui/GuiScreen/mc[1762,1764]::mc->field_146297_k
+Rename field net/minecraft/client/Minecraft/renderEngine[1777,1789]::renderEngine->field_71446_o
+Rename method net/minecraft/client/renderer/texture/TextureManager/bindTexture (Lnet/minecraft/util/ResourceLocation;)V[1791,1802]::bindTexture->func_110577_a
+Rename method net/minecraft/client/gui/Gui/drawTexturedModalRect (IIIIII)V[1895,1916]::drawTexturedModalRect->func_73729_b
+Rename method net/minecraft/client/gui/Gui/drawTexturedModalRect (IIIIII)V[2106,2127]::drawTexturedModalRect->func_73729_b
+Rename method net/minecraft/client/gui/Gui/drawTexturedModalRect (IIIIII)V[2241,2262]::drawTexturedModalRect->func_73729_b
+Rename field net/minecraft/client/gui/GuiScreen/mc[2475,2477]::mc->field_146297_k
+Rename field net/minecraft/client/Minecraft/player[2490,2496]::player->field_71439_g
+Rename method net/minecraft/client/entity/EntityPlayerSP/sendChatMessage (Ljava/lang/String;)V[2504,2519]::sendChatMessage->func_71165_d
+New Key: class ru/will0376/cases/gui/MPGui
+New Key: class ru/will0376/cases/gui/MPGui
+New Key: class ru/will0376/cases/gui/MPGui
+Rename field net/minecraft/client/gui/GuiScreen/mc[3594,3596]::mc->field_146297_k
+Rename field net/minecraft/client/Minecraft/renderEngine[3609,3621]::renderEngine->field_71446_o
+Rename method net/minecraft/client/renderer/texture/TextureManager/bindTexture (Lnet/minecraft/util/ResourceLocation;)V[3623,3634]::bindTexture->func_110577_a
+Rename method net/minecraft/client/gui/Gui/drawTexturedModalRect (IIIIII)V[3721,3742]::drawTexturedModalRect->func_73729_b
+Rename method net/minecraft/client/gui/Gui/drawTexturedModalRect (IIIIII)V[3774,3795]::drawTexturedModalRect->func_73729_b
+Rename method net/minecraft/client/gui/GuiScreen/mouseClickMove (IIIJ)V[4129,4143]::mouseClickMove->func_146273_a
+Rename method net/minecraft/client/gui/GuiScreen/mouseReleased (III)V[4201,4214]::mouseReleased->func_146286_b
+Rename method net/minecraft/client/gui/GuiScreen/handleMouseInput ()V[4262,4278]::handleMouseInput->func_146274_d
+Rename method net/minecraft/client/gui/GuiScreen/handleMouseInput ()V[4312,4328]::handleMouseInput->func_146274_d
+Rename method net/minecraft/client/gui/GuiScreen/initGui ()V[4407,4414]::initGui->func_73866_w_
+Import: net.minecraft.client.gui.ScaledResolution
+Import: net.minecraft.util.ResourceLocation
+Import: org.lwjgl.input.Mouse
+Import: org.lwjgl.opengl.GL11
+Import: ru.will0376.cases.Strings
+Import: ru.will0376.cases.network.PacketsDecoder
+Import: ru.will0376.cases.pojo.Case
+Import: java.io.IOException
+End  Processing: ru/will0376/cases/gui/GuiCasesShop.java
+
+Start Processing: ru/will0376/cases/gui/MPGui.java
+Rename method net/minecraft/client/renderer/texture/ITextureObject/getGlTextureId ()I[1026,1040]::getGlTextureId->func_110552_b
+Rename method net/minecraft/client/gui/Gui/drawCenteredString (Lnet/minecraft/client/gui/FontRenderer;Ljava/lang/String;III)V[1345,1363]::drawCenteredString->func_73732_a
+Rename field net/minecraft/client/gui/GuiScreen/mc[1364,1366]::mc->field_146297_k
+Rename field net/minecraft/client/Minecraft/fontRenderer[1379,1391]::fontRenderer->field_71466_p
+Rename method net/minecraft/client/gui/Gui/drawString (Lnet/minecraft/client/gui/FontRenderer;Ljava/lang/String;III)V[1487,1497]::drawString->func_73731_b
+Rename field net/minecraft/client/gui/GuiScreen/mc[1506,1508]::mc->field_146297_k
+Rename field net/minecraft/client/Minecraft/fontRenderer[1521,1533]::fontRenderer->field_71466_p
+Rename method net/minecraft/client/gui/Gui/drawString (Lnet/minecraft/client/gui/FontRenderer;Ljava/lang/String;III)V[1630,1640]::drawString->func_73731_b
+Rename field net/minecraft/client/gui/GuiScreen/mc[1649,1651]::mc->field_146297_k
+Rename field net/minecraft/client/Minecraft/fontRenderer[1664,1676]::fontRenderer->field_71466_p
+Rename field net/minecraft/client/gui/GuiScreen/fontRenderer[1692,1704]::fontRenderer->field_146289_q
+Rename method net/minecraft/client/gui/FontRenderer/getStringWidth (Ljava/lang/String;)I[1707,1721]::getStringWidth->func_78256_a
+Rename method net/minecraft/client/gui/GuiScreen/mouseClicked (III)V[3322,3334]::mouseClicked->func_73864_a
+Rename method net/minecraft/client/gui/GuiScreen/mouseClicked (III)V[3390,3402]::mouseClicked->func_73864_a
+Rename method net/minecraft/client/gui/GuiScreen/drawScreen (IIF)V[3530,3540]::drawScreen->func_73863_a
+Rename method net/minecraft/item/ItemStack/copy ()Lnet/minecraft/item/ItemStack;[3913,3917]::copy->func_77946_l
+Rename method net/minecraft/item/ItemStack/setCount (I)V[3939,3947]::setCount->func_190920_e
+Rename method net/minecraft/item/ItemStack/setItemDamage (I)V[3974,3987]::setItemDamage->func_77964_b
+Rename method net/minecraft/item/ItemStack/getMetadata ()I[3997,4008]::getMetadata->func_77960_j
+Rename field net/minecraft/client/gui/GuiScreen/mc[4066,4068]::mc->field_146297_k
+Rename field net/minecraft/client/Minecraft/world[4081,4086]::world->field_71441_e
+Rename field net/minecraft/entity/item/EntityItem/hoverStart[4137,4147]::hoverStart->field_70290_d
+Rename method net/minecraft/client/renderer/RenderHelper/enableGUIStandardItemLighting ()V[4236,4265]::enableGUIStandardItemLighting->func_74520_c
+Rename field net/minecraft/client/gui/GuiScreen/mc[4487,4489]::mc->field_146297_k
+Rename method net/minecraft/client/Minecraft/getRenderManager ()Lnet/minecraft/client/renderer/entity/RenderManager;[4502,4518]::getRenderManager->func_175598_ae
+Rename method net/minecraft/client/renderer/entity/RenderManager/renderEntity (Lnet/minecraft/entity/Entity;DDDFFZ)V[4519,4531]::renderEntity->func_188391_a
+Rename method net/minecraft/client/renderer/RenderHelper/disableStandardItemLighting ()V[4603,4630]::disableStandardItemLighting->func_74518_a
+Rename method net/minecraft/client/gui/GuiScreen/doesGuiPauseGame ()Z[4673,4689]::doesGuiPauseGame->func_73868_f
+Rename field net/minecraft/client/gui/GuiScreen/mc[4776,4778]::mc->field_146297_k
+Rename field net/minecraft/client/Minecraft/player[4791,4797]::player->field_71439_g
+Rename method net/minecraft/entity/Entity/playSound (Lnet/minecraft/util/SoundEvent;FF)V[4805,4814]::playSound->func_184185_a
+FOUND CONSTR method ru/will0376/cases/gui/MPGui/Timing/Timing (I)V ru/will0376/cases/gui/MPGui/Timing
+Import: com.google.common.collect.Maps
+Import: net.minecraft.client.gui.GuiScreen
+Import: net.minecraft.client.renderer.RenderHelper
+Import: net.minecraft.client.renderer.texture.DynamicTexture
+Import: net.minecraft.entity.item.EntityItem
+Import: net.minecraft.item.ItemStack
+Import: org.lwjgl.opengl.GL11
+Import: ru.will0376.cases.Rolling
+Import: ru.will0376.cases.model.ModelItemCase
+Import: javax.imageio.ImageIO
+Import: java.io.IOException
+Import: java.net.URL
+Import: java.util.Map
+End  Processing: ru/will0376/cases/gui/MPGui.java
+
+Start Processing: ru/will0376/cases/model/ModelGuiCase.java
+FOUND CONSTR method ru/will0376/cases/model/ModelGuiCase/ModelGuiCase ()V ru/will0376/cases/model/ModelGuiCase
+FOUND CONSTR method ru/will0376/cases/model/ModelGuiCase/ModelGuiCase (F)V ru/will0376/cases/model/ModelGuiCase
+Rename method net/minecraft/client/model/ModelRenderer/setTextureSize (II)Lnet/minecraft/client/model/ModelRenderer;[942,956]::setTextureSize->func_78787_b
+Rename method net/minecraft/client/model/ModelRenderer/addBox (FFFIII)Lnet/minecraft/client/model/ModelRenderer;[980,986]::addBox->func_78789_a
+Rename method net/minecraft/client/model/ModelRenderer/setRotationPoint (FFF)V[1040,1056]::setRotationPoint->func_78793_a
+Rename method net/minecraft/client/model/ModelRenderer/setTextureSize (II)Lnet/minecraft/client/model/ModelRenderer;[1136,1150]::setTextureSize->func_78787_b
+Rename method net/minecraft/client/model/ModelRenderer/addBox (FFFIII)Lnet/minecraft/client/model/ModelRenderer;[1175,1181]::addBox->func_78789_a
+Rename method net/minecraft/client/model/ModelRenderer/setRotationPoint (FFF)V[1236,1252]::setRotationPoint->func_78793_a
+Rename method net/minecraft/client/model/ModelRenderer/setTextureSize (II)Lnet/minecraft/client/model/ModelRenderer;[1332,1346]::setTextureSize->func_78787_b
+Rename method net/minecraft/client/model/ModelRenderer/addBox (FFFIII)Lnet/minecraft/client/model/ModelRenderer;[1371,1377]::addBox->func_78789_a
+Rename method net/minecraft/client/model/ModelRenderer/setRotationPoint (FFF)V[1432,1448]::setRotationPoint->func_78793_a
+Rename method net/minecraft/client/model/ModelRenderer/setTextureSize (II)Lnet/minecraft/client/model/ModelRenderer;[1528,1542]::setTextureSize->func_78787_b
+Rename method net/minecraft/client/model/ModelRenderer/addBox (FFFIII)Lnet/minecraft/client/model/ModelRenderer;[1567,1573]::addBox->func_78789_a
+Rename method net/minecraft/client/model/ModelRenderer/setRotationPoint (FFF)V[1628,1644]::setRotationPoint->func_78793_a
+Rename method net/minecraft/client/model/ModelRenderer/setTextureSize (II)Lnet/minecraft/client/model/ModelRenderer;[1724,1738]::setTextureSize->func_78787_b
+Rename method net/minecraft/client/model/ModelRenderer/addBox (FFFIII)Lnet/minecraft/client/model/ModelRenderer;[1763,1769]::addBox->func_78789_a
+Rename method net/minecraft/client/model/ModelRenderer/setRotationPoint (FFF)V[1824,1840]::setRotationPoint->func_78793_a
+Rename method net/minecraft/client/model/ModelRenderer/setTextureSize (II)Lnet/minecraft/client/model/ModelRenderer;[1920,1934]::setTextureSize->func_78787_b
+Rename method net/minecraft/client/model/ModelRenderer/addBox (FFFIII)Lnet/minecraft/client/model/ModelRenderer;[1959,1965]::addBox->func_78789_a
+Rename method net/minecraft/client/model/ModelRenderer/setRotationPoint (FFF)V[2020,2036]::setRotationPoint->func_78793_a
+Rename method net/minecraft/client/model/ModelRenderer/setTextureSize (II)Lnet/minecraft/client/model/ModelRenderer;[2117,2131]::setTextureSize->func_78787_b
+Rename method net/minecraft/client/model/ModelRenderer/addBox (FFFIII)Lnet/minecraft/client/model/ModelRenderer;[2156,2162]::addBox->func_78789_a
+Rename method net/minecraft/client/model/ModelRenderer/setRotationPoint (FFF)V[2216,2232]::setRotationPoint->func_78793_a
+Rename method net/minecraft/client/model/ModelRenderer/setTextureSize (II)Lnet/minecraft/client/model/ModelRenderer;[2318,2332]::setTextureSize->func_78787_b
+Rename method net/minecraft/client/model/ModelRenderer/addBox (FFFIII)Lnet/minecraft/client/model/ModelRenderer;[2357,2363]::addBox->func_78789_a
+Rename method net/minecraft/client/model/ModelRenderer/setRotationPoint (FFF)V[2417,2433]::setRotationPoint->func_78793_a
+Rename method net/minecraft/client/model/ModelRenderer/setTextureSize (II)Lnet/minecraft/client/model/ModelRenderer;[2518,2532]::setTextureSize->func_78787_b
+Rename method net/minecraft/client/model/ModelRenderer/addBox (FFFIII)Lnet/minecraft/client/model/ModelRenderer;[2557,2563]::addBox->func_78789_a
+Rename method net/minecraft/client/model/ModelRenderer/setRotationPoint (FFF)V[2617,2633]::setRotationPoint->func_78793_a
+Rename method net/minecraft/client/model/ModelRenderer/setTextureSize (II)Lnet/minecraft/client/model/ModelRenderer;[2717,2731]::setTextureSize->func_78787_b
+Rename method net/minecraft/client/model/ModelRenderer/addBox (FFFIII)Lnet/minecraft/client/model/ModelRenderer;[2756,2762]::addBox->func_78789_a
+Rename method net/minecraft/client/model/ModelRenderer/setRotationPoint (FFF)V[2816,2832]::setRotationPoint->func_78793_a
+Rename method net/minecraft/client/model/ModelRenderer/setTextureSize (II)Lnet/minecraft/client/model/ModelRenderer;[2919,2933]::setTextureSize->func_78787_b
+Rename method net/minecraft/client/model/ModelRenderer/addBox (FFFIII)Lnet/minecraft/client/model/ModelRenderer;[2959,2965]::addBox->func_78789_a
+Rename method net/minecraft/client/model/ModelRenderer/setRotationPoint (FFF)V[3020,3036]::setRotationPoint->func_78793_a
+Rename method net/minecraft/client/model/ModelRenderer/setTextureSize (II)Lnet/minecraft/client/model/ModelRenderer;[3122,3136]::setTextureSize->func_78787_b
+Rename method net/minecraft/client/model/ModelRenderer/addBox (FFFIII)Lnet/minecraft/client/model/ModelRenderer;[3162,3168]::addBox->func_78789_a
+Rename method net/minecraft/client/model/ModelRenderer/setRotationPoint (FFF)V[3223,3239]::setRotationPoint->func_78793_a
+Rename method net/minecraft/client/model/ModelRenderer/setTextureSize (II)Lnet/minecraft/client/model/ModelRenderer;[3327,3341]::setTextureSize->func_78787_b
+Rename method net/minecraft/client/model/ModelRenderer/addBox (FFFIII)Lnet/minecraft/client/model/ModelRenderer;[3367,3373]::addBox->func_78789_a
+Rename method net/minecraft/client/model/ModelRenderer/setRotationPoint (FFF)V[3428,3444]::setRotationPoint->func_78793_a
+Rename method net/minecraft/client/model/ModelRenderer/setTextureSize (II)Lnet/minecraft/client/model/ModelRenderer;[3524,3538]::setTextureSize->func_78787_b
+Rename method net/minecraft/client/model/ModelRenderer/addBox (FFFIII)Lnet/minecraft/client/model/ModelRenderer;[3561,3567]::addBox->func_78789_a
+Rename method net/minecraft/client/model/ModelRenderer/setRotationPoint (FFF)V[3621,3637]::setRotationPoint->func_78793_a
+Rename method net/minecraft/client/model/ModelRenderer/setTextureSize (II)Lnet/minecraft/client/model/ModelRenderer;[3718,3732]::setTextureSize->func_78787_b
+Rename method net/minecraft/client/model/ModelRenderer/addBox (FFFIII)Lnet/minecraft/client/model/ModelRenderer;[3756,3762]::addBox->func_78789_a
+Rename method net/minecraft/client/model/ModelRenderer/setRotationPoint (FFF)V[3817,3833]::setRotationPoint->func_78793_a
+Rename method net/minecraft/client/model/ModelRenderer/setTextureSize (II)Lnet/minecraft/client/model/ModelRenderer;[3913,3927]::setTextureSize->func_78787_b
+Rename method net/minecraft/client/model/ModelRenderer/addBox (FFFIII)Lnet/minecraft/client/model/ModelRenderer;[3951,3957]::addBox->func_78789_a
+Rename method net/minecraft/client/model/ModelRenderer/setRotationPoint (FFF)V[4012,4028]::setRotationPoint->func_78793_a
+Rename method net/minecraft/client/model/ModelRenderer/setTextureSize (II)Lnet/minecraft/client/model/ModelRenderer;[4108,4122]::setTextureSize->func_78787_b
+Rename method net/minecraft/client/model/ModelRenderer/addBox (FFFIII)Lnet/minecraft/client/model/ModelRenderer;[4146,4152]::addBox->func_78789_a
+Rename method net/minecraft/client/model/ModelRenderer/setRotationPoint (FFF)V[4206,4222]::setRotationPoint->func_78793_a
+Rename method net/minecraft/client/model/ModelRenderer/setTextureSize (II)Lnet/minecraft/client/model/ModelRenderer;[4306,4320]::setTextureSize->func_78787_b
+Rename method net/minecraft/client/model/ModelRenderer/addBox (FFFIII)Lnet/minecraft/client/model/ModelRenderer;[4344,4350]::addBox->func_78789_a
+Rename method net/minecraft/client/model/ModelRenderer/setRotationPoint (FFF)V[4404,4420]::setRotationPoint->func_78793_a
+Rename method net/minecraft/client/model/ModelRenderer/setTextureSize (II)Lnet/minecraft/client/model/ModelRenderer;[4500,4514]::setTextureSize->func_78787_b
+Rename method net/minecraft/client/model/ModelRenderer/addBox (FFFIII)Lnet/minecraft/client/model/ModelRenderer;[4537,4543]::addBox->func_78789_a
+Rename method net/minecraft/client/model/ModelRenderer/setRotationPoint (FFF)V[4596,4612]::setRotationPoint->func_78793_a
+Rename method net/minecraft/client/model/ModelRenderer/setTextureSize (II)Lnet/minecraft/client/model/ModelRenderer;[4698,4712]::setTextureSize->func_78787_b
+Rename method net/minecraft/client/model/ModelRenderer/addBox (FFFIII)Lnet/minecraft/client/model/ModelRenderer;[4736,4742]::addBox->func_78789_a
+Rename method net/minecraft/client/model/ModelRenderer/setRotationPoint (FFF)V[4794,4810]::setRotationPoint->func_78793_a
+Rename method net/minecraft/client/model/ModelRenderer/setTextureSize (II)Lnet/minecraft/client/model/ModelRenderer;[4904,4918]::setTextureSize->func_78787_b
+Rename method net/minecraft/client/model/ModelRenderer/addBox (FFFIII)Lnet/minecraft/client/model/ModelRenderer;[4942,4948]::addBox->func_78789_a
+Rename method net/minecraft/client/model/ModelRenderer/setRotationPoint (FFF)V[5000,5016]::setRotationPoint->func_78793_a
+Rename method net/minecraft/client/model/ModelBase/render (Lnet/minecraft/entity/Entity;FFFFFF)V[5055,5061]::render->func_78088_a
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[5175,5187]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[5211,5223]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[5247,5259]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[5283,5301]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[5318,5330]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[5355,5367]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[5392,5404]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[5429,5447]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[5464,5476]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[5501,5513]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[5538,5550]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[5575,5593]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[5610,5622]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[5647,5659]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[5684,5696]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[5721,5739]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[5756,5768]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[5793,5805]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[5830,5842]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[5867,5885]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[5902,5914]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[5939,5951]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[5976,5988]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[6013,6031]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[6048,6060]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[6091,6103]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[6128,6140]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[6165,6183]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[6200,6212]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[6243,6255]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[6280,6292]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[6317,6335]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[6352,6364]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[6395,6407]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[6432,6444]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[6469,6487]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[6504,6516]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[6547,6559]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[6584,6596]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[6621,6639]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[6657,6669]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[6701,6713]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[6739,6751]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[6777,6795]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[6813,6825]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[6857,6869]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[6895,6907]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[6933,6951]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[6969,6981]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[7013,7025]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[7051,7063]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[7089,7107]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[7122,7134]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[7157,7169]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[7192,7204]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[7227,7245]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[7261,7273]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[7297,7309]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[7333,7345]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[7375,7393]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[7409,7421]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[7445,7457]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[7481,7493]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[7522,7540]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[7556,7568]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[7592,7604]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[7628,7640]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[7670,7688]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[7704,7716]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[7740,7752]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[7781,7793]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[7823,7841]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[7856,7868]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[7891,7903]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[7926,7938]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[7967,7985]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[8001,8013]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[8037,8049]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[8073,8085]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[8109,8127]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[8143,8155]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[8179,8191]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[8215,8227]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[8251,8269]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[8429,8441]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[8465,8477]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[8501,8513]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[8537,8555]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[8572,8584]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[8609,8621]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[8646,8658]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[8683,8701]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[8718,8730]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[8755,8767]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[8792,8804]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[8829,8847]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[8864,8876]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[8901,8913]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[8938,8950]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[8975,8993]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[9010,9022]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[9047,9059]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[9084,9096]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[9121,9139]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[9156,9168]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[9193,9205]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[9230,9242]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[9267,9285]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[9302,9314]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[9345,9357]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[9382,9394]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[9419,9437]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[9454,9466]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[9497,9509]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[9534,9546]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[9571,9589]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[9606,9618]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[9649,9661]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[9686,9698]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[9723,9741]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[9758,9770]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[9801,9813]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[9838,9850]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[9875,9893]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[9911,9923]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[9955,9967]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[9993,10005]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[10031,10049]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[10067,10079]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[10111,10123]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[10149,10161]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[10187,10205]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[10223,10235]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[10267,10279]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[10305,10317]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[10343,10361]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[10399,10411]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[10434,10446]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[10469,10481]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[10504,10522]::renderWithRotation->func_78791_b
+Rename method net/minecraft/client/renderer/RenderHelper/enableGUIStandardItemLighting ()V[10540,10569]::enableGUIStandardItemLighting->func_74520_c
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[10570,10582]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[10606,10618]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[10642,10654]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[10684,10702]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[10718,10730]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[10754,10766]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[10790,10802]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[10831,10849]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[10865,10877]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[10901,10913]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[10937,10949]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[10979,10997]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[11013,11025]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[11049,11061]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[11090,11102]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[11132,11150]::renderWithRotation->func_78791_b
+Rename method net/minecraft/client/renderer/RenderHelper/disableStandardItemLighting ()V[11168,11195]::disableStandardItemLighting->func_74518_a
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[11264,11276]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[11300,11312]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[11336,11348]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[11372,11390]::renderWithRotation->func_78791_b
+Import: net.minecraft.client.model.ModelBase
+Import: net.minecraft.client.model.ModelRenderer
+Import: net.minecraft.client.renderer.RenderHelper
+Import: net.minecraft.entity.Entity
+Import: org.lwjgl.opengl.GL11
+End  Processing: ru/will0376/cases/model/ModelGuiCase.java
+
+Start Processing: ru/will0376/cases/model/ModelItemCase.java
+FOUND CONSTR method ru/will0376/cases/model/ModelItemCase/ModelItemCase ()V ru/will0376/cases/model/ModelItemCase
+FOUND CONSTR method ru/will0376/cases/model/ModelItemCase/ModelItemCase (F)V ru/will0376/cases/model/ModelItemCase
+Rename method net/minecraft/client/model/ModelRenderer/setTextureSize (II)Lnet/minecraft/client/model/ModelRenderer;[737,751]::setTextureSize->func_78787_b
+Rename method net/minecraft/client/model/ModelRenderer/addBox (FFFIII)Lnet/minecraft/client/model/ModelRenderer;[786,792]::addBox->func_78789_a
+Rename method net/minecraft/client/model/ModelRenderer/setRotationPoint (FFF)V[857,873]::setRotationPoint->func_78793_a
+Rename method net/minecraft/client/model/ModelRenderer/setTextureSize (II)Lnet/minecraft/client/model/ModelRenderer;[978,992]::setTextureSize->func_78787_b
+Rename method net/minecraft/client/model/ModelRenderer/addBox (FFFIII)Lnet/minecraft/client/model/ModelRenderer;[1029,1035]::addBox->func_78789_a
+Rename method net/minecraft/client/model/ModelRenderer/setRotationPoint (FFF)V[1101,1117]::setRotationPoint->func_78793_a
+Rename method net/minecraft/client/model/ModelRenderer/setTextureSize (II)Lnet/minecraft/client/model/ModelRenderer;[1225,1239]::setTextureSize->func_78787_b
+Rename method net/minecraft/client/model/ModelRenderer/addBox (FFFIII)Lnet/minecraft/client/model/ModelRenderer;[1277,1283]::addBox->func_78789_a
+Rename method net/minecraft/client/model/ModelRenderer/setRotationPoint (FFF)V[1350,1366]::setRotationPoint->func_78793_a
+Rename method net/minecraft/client/model/ModelRenderer/setTextureSize (II)Lnet/minecraft/client/model/ModelRenderer;[1464,1478]::setTextureSize->func_78787_b
+Rename method net/minecraft/client/model/ModelRenderer/addBox (FFFIII)Lnet/minecraft/client/model/ModelRenderer;[1511,1517]::addBox->func_78789_a
+Rename method net/minecraft/client/model/ModelRenderer/setRotationPoint (FFF)V[1580,1596]::setRotationPoint->func_78793_a
+Rename method net/minecraft/client/model/ModelRenderer/setTextureSize (II)Lnet/minecraft/client/model/ModelRenderer;[1694,1708]::setTextureSize->func_78787_b
+Rename method net/minecraft/client/model/ModelRenderer/addBox (FFFIII)Lnet/minecraft/client/model/ModelRenderer;[1741,1747]::addBox->func_78789_a
+Rename method net/minecraft/client/model/ModelRenderer/setRotationPoint (FFF)V[1810,1826]::setRotationPoint->func_78793_a
+Rename method net/minecraft/client/model/ModelRenderer/setTextureSize (II)Lnet/minecraft/client/model/ModelRenderer;[1925,1939]::setTextureSize->func_78787_b
+Rename method net/minecraft/client/model/ModelRenderer/addBox (FFFIII)Lnet/minecraft/client/model/ModelRenderer;[1972,1978]::addBox->func_78789_a
+Rename method net/minecraft/client/model/ModelRenderer/setRotationPoint (FFF)V[2041,2057]::setRotationPoint->func_78793_a
+Rename method net/minecraft/client/model/ModelRenderer/setTextureSize (II)Lnet/minecraft/client/model/ModelRenderer;[2155,2169]::setTextureSize->func_78787_b
+Rename method net/minecraft/client/model/ModelRenderer/addBox (FFFIII)Lnet/minecraft/client/model/ModelRenderer;[2202,2208]::addBox->func_78789_a
+Rename method net/minecraft/client/model/ModelRenderer/setRotationPoint (FFF)V[2271,2287]::setRotationPoint->func_78793_a
+Rename method net/minecraft/client/model/ModelRenderer/setTextureSize (II)Lnet/minecraft/client/model/ModelRenderer;[2365,2379]::setTextureSize->func_78787_b
+Rename method net/minecraft/client/model/ModelRenderer/addBox (FFFIII)Lnet/minecraft/client/model/ModelRenderer;[2402,2408]::addBox->func_78789_a
+Rename method net/minecraft/client/model/ModelRenderer/setRotationPoint (FFF)V[2463,2479]::setRotationPoint->func_78793_a
+Rename method net/minecraft/client/model/ModelRenderer/setTextureSize (II)Lnet/minecraft/client/model/ModelRenderer;[2577,2591]::setTextureSize->func_78787_b
+Rename method net/minecraft/client/model/ModelRenderer/addBox (FFFIII)Lnet/minecraft/client/model/ModelRenderer;[2624,2630]::addBox->func_78789_a
+Rename method net/minecraft/client/model/ModelRenderer/setRotationPoint (FFF)V[2692,2708]::setRotationPoint->func_78793_a
+Rename method net/minecraft/client/model/ModelRenderer/setTextureSize (II)Lnet/minecraft/client/model/ModelRenderer;[2806,2820]::setTextureSize->func_78787_b
+Rename method net/minecraft/client/model/ModelRenderer/addBox (FFFIII)Lnet/minecraft/client/model/ModelRenderer;[2853,2859]::addBox->func_78789_a
+Rename method net/minecraft/client/model/ModelRenderer/setRotationPoint (FFF)V[2921,2937]::setRotationPoint->func_78793_a
+Rename method net/minecraft/client/model/ModelRenderer/setTextureSize (II)Lnet/minecraft/client/model/ModelRenderer;[3022,3036]::setTextureSize->func_78787_b
+Rename method net/minecraft/client/model/ModelRenderer/addBox (FFFIII)Lnet/minecraft/client/model/ModelRenderer;[3062,3068]::addBox->func_78789_a
+Rename method net/minecraft/client/model/ModelRenderer/setRotationPoint (FFF)V[3124,3140]::setRotationPoint->func_78793_a
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[3228,3240]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[3275,3287]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[3322,3334]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[3369,3387]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[3416,3428]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[3465,3477]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[3514,3526]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[3563,3581]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[3611,3623]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[3661,3673]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[3711,3723]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[3761,3779]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[3804,3816]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[3849,3861]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[3894,3906]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[3939,3957]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[3982,3994]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[4027,4039]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[4072,4084]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[4117,4135]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[4160,4172]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[4205,4217]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[4250,4262]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[4295,4313]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[4338,4350]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[4383,4395]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[4428,4440]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[4473,4491]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[4506,4518]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[4541,4553]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[4576,4588]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[4611,4629]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[4654,4666]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[4699,4711]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[4744,4756]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[4789,4807]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[4832,4844]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[4877,4889]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[4922,4934]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[4967,4985]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[5003,5015]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[5041,5053]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[5079,5091]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[5117,5135]::renderWithRotation->func_78791_b
+Rename method net/minecraft/client/model/ModelBase/render (Lnet/minecraft/entity/Entity;FFFFFF)V[5157,5163]::render->func_78088_a
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[5288,5300]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[5335,5347]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[5382,5394]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[5429,5447]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[5476,5488]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[5525,5537]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[5574,5586]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[5623,5641]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[5671,5683]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[5721,5733]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[5771,5783]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[5821,5839]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[5864,5876]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[5909,5921]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[5954,5966]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[5999,6017]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[6042,6054]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[6087,6099]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[6132,6144]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[6177,6195]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[6220,6232]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[6265,6277]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[6310,6322]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[6355,6373]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[6398,6410]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[6443,6455]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[6488,6500]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[6533,6551]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[6566,6578]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[6601,6613]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[6636,6648]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[6671,6689]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[6714,6726]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[6759,6771]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[6804,6816]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[6849,6867]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[6892,6904]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[6937,6949]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[6982,6994]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[7027,7045]::renderWithRotation->func_78791_b
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleX[7063,7075]::rotateAngleX->field_78795_f
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleY[7101,7113]::rotateAngleY->field_78796_g
+Rename field net/minecraft/client/model/ModelRenderer/rotateAngleZ[7139,7151]::rotateAngleZ->field_78808_h
+Rename method net/minecraft/client/model/ModelRenderer/renderWithRotation (F)V[7177,7195]::renderWithRotation->func_78791_b
+Import: net.minecraft.client.model.ModelBase
+Import: net.minecraft.client.model.ModelRenderer
+Import: net.minecraft.entity.Entity
+End  Processing: ru/will0376/cases/model/ModelItemCase.java
+
+Start Processing: ru/will0376/cases/network/CasesListPacket.java
+FOUND CONSTR method ru/will0376/cases/network/CasesListPacket/CasesListPacket ()V ru/will0376/cases/network/CasesListPacket
+FOUND CONSTR method ru/will0376/cases/network/CasesListPacket/CasesListPacket (Ljava/lang/String;)V ru/will0376/cases/network/CasesListPacket
+Import: io.netty.buffer.ByteBuf
+Import: net.minecraftforge.fml.common.network.ByteBufUtils
+Import: net.minecraftforge.fml.common.network.simpleimpl.IMessage
+Import: net.minecraftforge.fml.common.network.simpleimpl.IMessageHandler
+Import: net.minecraftforge.fml.common.network.simpleimpl.MessageContext
+End  Processing: ru/will0376/cases/network/CasesListPacket.java
+
+Start Processing: ru/will0376/cases/network/CasesMainPacket.java
+FOUND CONSTR method ru/will0376/cases/network/CasesMainPacket/CasesMainPacket ()V ru/will0376/cases/network/CasesMainPacket
+FOUND CONSTR method ru/will0376/cases/network/CasesMainPacket/CasesMainPacket (Ljava/lang/String;)V ru/will0376/cases/network/CasesMainPacket
+Rename method net/minecraft/client/Minecraft/getMinecraft ()Lnet/minecraft/client/Minecraft;[1290,1302]::getMinecraft->func_71410_x
+Rename method net/minecraft/util/IThreadListener/addScheduledTask (Ljava/lang/Runnable;)Lcom/google/common/util/concurrent/ListenableFuture;[1305,1321]::addScheduledTask->func_152344_a
+Rename method net/minecraft/client/Minecraft/getMinecraft ()Lnet/minecraft/client/Minecraft;[1335,1347]::getMinecraft->func_71410_x
+Rename method net/minecraft/client/Minecraft/displayGuiScreen (Lnet/minecraft/client/gui/GuiScreen;)V[1350,1366]::displayGuiScreen->func_147108_a
+Rename method net/minecraft/client/Minecraft/getMinecraft ()Lnet/minecraft/client/Minecraft;[1488,1500]::getMinecraft->func_71410_x
+Rename method net/minecraft/util/IThreadListener/addScheduledTask (Ljava/lang/Runnable;)Lcom/google/common/util/concurrent/ListenableFuture;[1503,1519]::addScheduledTask->func_152344_a
+Rename method net/minecraft/client/Minecraft/getMinecraft ()Lnet/minecraft/client/Minecraft;[1533,1545]::getMinecraft->func_71410_x
+Rename method net/minecraft/client/Minecraft/displayGuiScreen (Lnet/minecraft/client/gui/GuiScreen;)V[1548,1564]::displayGuiScreen->func_147108_a
+Rename method net/minecraft/client/Minecraft/getMinecraft ()Lnet/minecraft/client/Minecraft;[1861,1873]::getMinecraft->func_71410_x
+Rename method net/minecraft/util/IThreadListener/addScheduledTask (Ljava/lang/Runnable;)Lcom/google/common/util/concurrent/ListenableFuture;[1876,1892]::addScheduledTask->func_152344_a
+Rename method net/minecraft/client/Minecraft/getMinecraft ()Lnet/minecraft/client/Minecraft;[1906,1918]::getMinecraft->func_71410_x
+Rename method net/minecraft/client/Minecraft/displayGuiScreen (Lnet/minecraft/client/gui/GuiScreen;)V[1921,1937]::displayGuiScreen->func_147108_a
+Import: io.netty.buffer.ByteBuf
+Import: net.minecraft.client.Minecraft
+Import: net.minecraftforge.fml.common.network.ByteBufUtils
+Import: net.minecraftforge.fml.common.network.simpleimpl.IMessage
+Import: net.minecraftforge.fml.common.network.simpleimpl.IMessageHandler
+Import: net.minecraftforge.fml.common.network.simpleimpl.MessageContext
+Import: ru.will0376.cases.gui.GuiCaseView
+Import: ru.will0376.cases.gui.GuiCasesShop
+End  Processing: ru/will0376/cases/network/CasesMainPacket.java
+
+Start Processing: ru/will0376/cases/network/CasesViewPacket.java
+FOUND CONSTR method ru/will0376/cases/network/CasesViewPacket/CasesViewPacket ()V ru/will0376/cases/network/CasesViewPacket
+FOUND CONSTR method ru/will0376/cases/network/CasesViewPacket/CasesViewPacket (Ljava/lang/String;)V ru/will0376/cases/network/CasesViewPacket
+Import: io.netty.buffer.ByteBuf
+Import: net.minecraftforge.fml.common.network.ByteBufUtils
+Import: net.minecraftforge.fml.common.network.simpleimpl.IMessage
+Import: net.minecraftforge.fml.common.network.simpleimpl.IMessageHandler
+Import: net.minecraftforge.fml.common.network.simpleimpl.MessageContext
+End  Processing: ru/will0376/cases/network/CasesViewPacket.java
+
+Start Processing: ru/will0376/cases/network/PacketsDecoder.java
+Rename method net/minecraft/item/Item/getItemById (I)Lnet/minecraft/item/Item;[1181,1192]::getItemById->func_150899_d
+Rename method net/minecraft/item/ItemStack/setItemDamage (I)V[1214,1227]::setItemDamage->func_77964_b
+Rename method net/minecraft/item/Item/getItemById (I)Lnet/minecraft/item/Item;[3082,3093]::getItemById->func_150899_d
+Rename method net/minecraft/item/ItemStack/setItemDamage (I)V[3162,3175]::setItemDamage->func_77964_b
+Import: net.minecraft.item.Item
+Import: net.minecraft.item.ItemStack
+Import: ru.will0376.cases.pojo.Case
+Import: ru.will0376.cases.pojo.CaseItem
+Import: java.util.ArrayList
+Import: java.util.Collections
+Import: java.util.List
+Import: java.util.Random
+End  Processing: ru/will0376/cases/network/PacketsDecoder.java
+
+Start Processing: ru/will0376/cases/network/Recieve.java
+End  Processing: ru/will0376/cases/network/Recieve.java
+
+Start Processing: ru/will0376/cases/pojo/Case.java
+FOUND CONSTR method ru/will0376/cases/pojo/Case/Case (Ljava/lang/String;ILjava/lang/String;)V ru/will0376/cases/pojo/Case
+End  Processing: ru/will0376/cases/pojo/Case.java
+
+Start Processing: ru/will0376/cases/pojo/CaseItem.java
+FOUND CONSTR method ru/will0376/cases/pojo/CaseItem/CaseItem (Lnet/minecraft/item/ItemStack;I)V ru/will0376/cases/pojo/CaseItem
+Import: net.minecraft.item.ItemStack
+End  Processing: ru/will0376/cases/pojo/CaseItem.java
+
+Start Processing: ru/will0376/cases/server/Comma.java
+Rename method net/minecraft/command/ICommand/getName ()Ljava/lang/String;[1354,1361]::getName->func_71517_b
+Rename method net/minecraft/command/ICommand/getUsage (Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;[1425,1433]::getUsage->func_71518_a
+Rename method net/minecraft/command/ICommand/getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;Lnet/minecraft/util/math/BlockPos;)Ljava/util/List;[1520,1537]::getTabCompletions->func_184883_a
+Rename method net/minecraft/command/CommandBase/getListOfStringsMatchingLastWord ([Ljava/lang/String;[Ljava/lang/String;)Ljava/util/List;[1664,1696]::getListOfStringsMatchingLastWord->func_71530_a
+Rename method net/minecraft/command/CommandBase/getListOfStringsMatchingLastWord ([Ljava/lang/String;[Ljava/lang/String;)Ljava/util/List;[1782,1814]::getListOfStringsMatchingLastWord->func_71530_a
+Rename method net/minecraft/server/MinecraftServer/getOnlinePlayerNames ()[Ljava/lang/String;[1808,1828]::getOnlinePlayerNames->func_71213_z
+Rename method net/minecraft/command/ICommand/getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;Lnet/minecraft/util/math/BlockPos;)Ljava/util/List;[1846,1863]::getTabCompletions->func_184883_a
+Rename method net/minecraft/command/ICommand/getAliases ()Ljava/util/List;[1934,1944]::getAliases->func_71514_a
+Rename method net/minecraft/command/ICommand/execute (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V[2077,2084]::execute->func_184881_a
+Rename method net/minecraft/command/ICommandSender/canUseCommand (ILjava/lang/String;)Z[2194,2207]::canUseCommand->func_70003_b
+Rename method net/minecraft/command/ICommandSender/sendMessage (Lnet/minecraft/util/text/ITextComponent;)V[2247,2258]::sendMessage->func_145747_a
+Rename method net/minecraft/command/ICommandSender/canUseCommand (ILjava/lang/String;)Z[2379,2392]::canUseCommand->func_70003_b
+Rename method net/minecraft/command/ICommandSender/sendMessage (Lnet/minecraft/util/text/ITextComponent;)V[2434,2445]::sendMessage->func_145747_a
+Rename method net/minecraft/command/ICommandSender/sendMessage (Lnet/minecraft/util/text/ITextComponent;)V[2502,2513]::sendMessage->func_145747_a
+Rename method net/minecraft/command/ICommandSender/getName ()Ljava/lang/String;[2620,2627]::getName->func_70005_c_
+Rename method net/minecraft/command/ICommandSender/sendMessage (Lnet/minecraft/util/text/ITextComponent;)V[2667,2678]::sendMessage->func_145747_a
+Rename method net/minecraft/command/ICommandSender/canUseCommand (ILjava/lang/String;)Z[2848,2861]::canUseCommand->func_70003_b
+Rename method net/minecraft/command/ICommandSender/sendMessage (Lnet/minecraft/util/text/ITextComponent;)V[2903,2914]::sendMessage->func_145747_a
+Rename method net/minecraft/command/ICommandSender/canUseCommand (ILjava/lang/String;)Z[3533,3546]::canUseCommand->func_70003_b
+Rename method net/minecraft/command/ICommandSender/sendMessage (Lnet/minecraft/util/text/ITextComponent;)V[3588,3599]::sendMessage->func_145747_a
+Rename method net/minecraft/command/ICommandSender/sendMessage (Lnet/minecraft/util/text/ITextComponent;)V[4102,4113]::sendMessage->func_145747_a
+Rename method net/minecraft/command/ICommandSender/canUseCommand (ILjava/lang/String;)Z[4236,4249]::canUseCommand->func_70003_b
+Rename method net/minecraft/command/ICommandSender/sendMessage (Lnet/minecraft/util/text/ITextComponent;)V[4291,4302]::sendMessage->func_145747_a
+Rename method net/minecraft/command/ICommandSender/getName ()Ljava/lang/String;[4446,4453]::getName->func_70005_c_
+Rename field net/minecraft/entity/player/EntityPlayer/inventory[4844,4853]::inventory->field_71071_by
+Rename method net/minecraft/entity/player/InventoryPlayer/addItemStackToInventory (Lnet/minecraft/item/ItemStack;)Z[4859,4882]::addItemStackToInventory->func_70441_a
+Rename method net/minecraft/command/ICommandSender/getEntityWorld ()Lnet/minecraft/world/World;[4949,4963]::getEntityWorld->func_130014_f_
+Rename method net/minecraft/command/ICommandSender/getPosition ()Lnet/minecraft/util/math/BlockPos;[4974,4985]::getPosition->func_180425_c
+Rename method net/minecraft/util/math/Vec3i/getX ()I[4990,4994]::getX->func_177958_n
+Rename method net/minecraft/command/ICommandSender/getPosition ()Lnet/minecraft/util/math/BlockPos;[5014,5025]::getPosition->func_180425_c
+Rename method net/minecraft/util/math/Vec3i/getY ()I[5030,5034]::getY->func_177956_o
+Rename method net/minecraft/command/ICommandSender/getPosition ()Lnet/minecraft/util/math/BlockPos;[5054,5065]::getPosition->func_180425_c
+Rename method net/minecraft/util/math/Vec3i/getZ ()I[5070,5074]::getZ->func_177952_p
+Rename method net/minecraft/command/ICommandSender/getEntityWorld ()Lnet/minecraft/world/World;[5105,5119]::getEntityWorld->func_130014_f_
+Rename method net/minecraft/world/World/spawnEntity (Lnet/minecraft/entity/Entity;)Z[5122,5133]::spawnEntity->func_72838_d
+Rename method net/minecraft/command/ICommandSender/sendMessage (Lnet/minecraft/util/text/ITextComponent;)V[5590,5601]::sendMessage->func_145747_a
+Rename method net/minecraft/command/ICommandSender/sendMessage (Lnet/minecraft/util/text/ITextComponent;)V[5798,5809]::sendMessage->func_145747_a
+Rename method net/minecraft/command/ICommandSender/canUseCommand (ILjava/lang/String;)Z[5931,5944]::canUseCommand->func_70003_b
+Rename method net/minecraft/command/ICommandSender/sendMessage (Lnet/minecraft/util/text/ITextComponent;)V[5985,5996]::sendMessage->func_145747_a
+Rename method net/minecraft/command/ICommandSender/sendMessage (Lnet/minecraft/util/text/ITextComponent;)V[6447,6458]::sendMessage->func_145747_a
+Rename method net/minecraft/command/ICommandSender/sendMessage (Lnet/minecraft/util/text/ITextComponent;)V[6564,6575]::sendMessage->func_145747_a
+Rename method net/minecraft/command/ICommandSender/canUseCommand (ILjava/lang/String;)Z[6691,6704]::canUseCommand->func_70003_b
+Rename method net/minecraft/command/ICommandSender/sendMessage (Lnet/minecraft/util/text/ITextComponent;)V[6748,6759]::sendMessage->func_145747_a
+Rename method net/minecraft/command/ICommandSender/sendMessage (Lnet/minecraft/util/text/ITextComponent;)V[7210,7221]::sendMessage->func_145747_a
+Rename method net/minecraft/command/ICommandSender/sendMessage (Lnet/minecraft/util/text/ITextComponent;)V[7327,7338]::sendMessage->func_145747_a
+Rename method net/minecraft/command/ICommandSender/canUseCommand (ILjava/lang/String;)Z[7456,7469]::canUseCommand->func_70003_b
+Rename method net/minecraft/command/ICommandSender/sendMessage (Lnet/minecraft/util/text/ITextComponent;)V[7512,7523]::sendMessage->func_145747_a
+Rename method net/minecraft/command/ICommandSender/getName ()Ljava/lang/String;[7862,7869]::getName->func_70005_c_
+Rename method net/minecraft/command/ICommandSender/getName ()Ljava/lang/String;[7917,7924]::getName->func_70005_c_
+Rename method net/minecraft/command/ICommandSender/sendMessage (Lnet/minecraft/util/text/ITextComponent;)V[8050,8061]::sendMessage->func_145747_a
+Rename method net/minecraft/command/ICommandSender/sendMessage (Lnet/minecraft/util/text/ITextComponent;)V[8228,8239]::sendMessage->func_145747_a
+Rename method net/minecraft/command/ICommandSender/canUseCommand (ILjava/lang/String;)Z[8349,8362]::canUseCommand->func_70003_b
+Rename method net/minecraft/command/ICommandSender/sendMessage (Lnet/minecraft/util/text/ITextComponent;)V[8406,8417]::sendMessage->func_145747_a
+Rename method net/minecraft/command/ICommandSender/sendMessage (Lnet/minecraft/util/text/ITextComponent;)V[8564,8575]::sendMessage->func_145747_a
+Rename method net/minecraft/command/ICommandSender/canUseCommand (ILjava/lang/String;)Z[8689,8702]::canUseCommand->func_70003_b
+Rename method net/minecraft/command/ICommandSender/sendMessage (Lnet/minecraft/util/text/ITextComponent;)V[8745,8756]::sendMessage->func_145747_a
+Rename method net/minecraft/command/ICommandSender/sendMessage (Lnet/minecraft/util/text/ITextComponent;)V[8815,8826]::sendMessage->func_145747_a
+Rename method net/minecraft/server/MinecraftServer/getPlayerList ()Lnet/minecraft/server/management/PlayerList;[9055,9068]::getPlayerList->func_184103_al
+Rename method net/minecraft/server/management/PlayerList/getPlayers ()Ljava/util/List;[9072,9082]::getPlayers->func_181057_v
+Rename method net/minecraft/command/ICommandSender/getName ()Ljava/lang/String;[9185,9192]::getName->func_70005_c_
+Rename method net/minecraft/command/ICommandSender/sendMessage (Lnet/minecraft/util/text/ITextComponent;)V[9234,9245]::sendMessage->func_145747_a
+Rename method net/minecraft/command/ICommandSender/sendMessage (Lnet/minecraft/util/text/ITextComponent;)V[9625,9636]::sendMessage->func_145747_a
+Import: com.google.common.base.Function
+Import: com.google.common.base.Joiner
+Import: com.google.common.collect.Iterables
+Import: net.minecraft.command.CommandBase
+Import: net.minecraft.command.CommandException
+Import: net.minecraft.command.ICommandSender
+Import: net.minecraft.entity.item.EntityItem
+Import: net.minecraft.entity.player.EntityPlayerMP
+Import: net.minecraft.server.MinecraftServer
+Import: net.minecraft.util.math.BlockPos
+Import: net.minecraft.util.text.TextComponentString
+Import: net.minecraft.util.text.TextFormatting
+Import: net.minecraftforge.fml.common.FMLCommonHandler
+Import: ru.justagod.cutter.GradleSide
+Import: ru.justagod.cutter.GradleSideOnly
+Import: ru.will0376.cases.Cases
+Import: ru.will0376.cases.network.CasesListPacket
+Import: ru.will0376.cases.network.CasesMainPacket
+Import: ru.will0376.cases.network.CasesViewPacket
+Import: javax.annotation.Nullable
+Import: java.util.ArrayList
+Import: java.util.List
+Import: static ru.will0376.cases.server.JCases.decrementCases
+End  Processing: ru/will0376/cases/server/Comma.java
+
+Start Processing: ru/will0376/cases/server/ItemStackBuilder.java
+FOUND CONSTR method ru/will0376/cases/server/ItemStackBuilder/ItemStackBuilder (Lnet/minecraft/item/Item;I)V ru/will0376/cases/server/ItemStackBuilder
+FOUND CONSTR method ru/will0376/cases/server/ItemStackBuilder/ItemStackBuilder (Lnet/minecraft/item/ItemStack;)V ru/will0376/cases/server/ItemStackBuilder
+Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[1038,1045]::getItem->func_77973_b
+Rename method net/minecraft/item/ItemStack/getMetadata ()I[1060,1071]::getMetadata->func_77960_j
+Rename method net/minecraft/enchantment/Enchantment/getEnchantmentByID (I)Lnet/minecraft/enchantment/Enchantment;[1483,1501]::getEnchantmentByID->func_185262_c
+Rename method net/minecraft/item/ItemStack/addEnchantment (Lnet/minecraft/enchantment/Enchantment;I)V[3219,3233]::addEnchantment->func_77966_a
+Rename method net/minecraft/item/ItemStack/getTagCompound ()Lnet/minecraft/nbt/NBTTagCompound;[3313,3327]::getTagCompound->func_77978_p
+Rename method net/minecraft/nbt/NBTTagList/appendTag (Lnet/minecraft/nbt/NBTBase;)V[3452,3461]::appendTag->func_74742_a
+Rename method net/minecraft/nbt/NBTTagCompound/setTag (Ljava/lang/String;Lnet/minecraft/nbt/NBTBase;)V[3551,3557]::setTag->func_74782_a
+Rename method net/minecraft/nbt/NBTTagCompound/setTag (Ljava/lang/String;Lnet/minecraft/nbt/NBTBase;)V[3589,3595]::setTag->func_74782_a
+Rename method net/minecraft/item/ItemStack/setTagCompound (Lnet/minecraft/nbt/NBTTagCompound;)V[3637,3651]::setTagCompound->func_77982_d
+Rename method net/minecraft/item/ItemStack/setStackDisplayName (Ljava/lang/String;)Lnet/minecraft/item/ItemStack;[3703,3722]::setStackDisplayName->func_151001_c
+Import: com.google.common.collect.Lists
+Import: com.google.common.collect.Maps
+Import: net.minecraft.enchantment.Enchantment
+Import: net.minecraft.item.Item
+Import: net.minecraft.item.ItemStack
+Import: net.minecraft.nbt.NBTTagCompound
+Import: net.minecraft.nbt.NBTTagList
+Import: net.minecraft.nbt.NBTTagString
+Import: ru.justagod.cutter.GradleSide
+Import: ru.justagod.cutter.GradleSideOnly
+Import: ru.will0376.cases.server.json.Enchants
+Import: java.util.ArrayList
+Import: java.util.HashMap
+Import: java.util.Map
+End  Processing: ru/will0376/cases/server/ItemStackBuilder.java
+
+Start Processing: ru/will0376/cases/server/JCase.java
+FOUND CONSTR method ru/will0376/cases/server/JCase/JCase ()V ru/will0376/cases/server/JCase
+Import: com.google.common.base.Function
+Import: com.google.common.base.Joiner
+Import: com.google.gson.annotations.SerializedName
+Import: ru.justagod.cutter.GradleSide
+Import: ru.justagod.cutter.GradleSideOnly
+Import: java.util.List
+Import: static com.google.common.collect.Iterables.transform
+End  Processing: ru/will0376/cases/server/JCase.java
+
+Start Processing: ru/will0376/cases/server/JCaseItem.java
+Rename method net/minecraft/item/Item/getIdFromItem (Lnet/minecraft/item/Item;)I[506,519]::getIdFromItem->func_150891_b
+Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[530,537]::getItem->func_77973_b
+Rename method net/minecraft/item/ItemStack/getMetadata ()I[603,614]::getMetadata->func_77960_j
+Rename method net/minecraft/item/ItemStack/getCount ()I[677,685]::getCount->func_190916_E
+Rename method net/minecraft/item/ItemStack/getDisplayName ()Ljava/lang/String;[753,767]::getDisplayName->func_82833_r
+Import: com.google.gson.annotations.SerializedName
+Import: net.minecraft.item.Item
+Import: net.minecraft.item.ItemStack
+Import: ru.justagod.cutter.GradleSide
+Import: ru.justagod.cutter.GradleSideOnly
+End  Processing: ru/will0376/cases/server/JCaseItem.java
+
+Start Processing: ru/will0376/cases/server/JCases.java
+Rename method net/minecraft/command/ICommandSender/getName ()Ljava/lang/String;[2392,2399]::getName->func_70005_c_
+Rename method net/minecraft/command/ICommandSender/getName ()Ljava/lang/String;[2747,2754]::getName->func_70005_c_
+Import: com.google.common.base.Charsets
+Import: com.google.common.collect.Maps
+Import: com.google.common.io.Files
+Import: com.google.common.reflect.TypeToken
+Import: com.google.gson.Gson
+Import: com.google.gson.GsonBuilder
+Import: net.minecraft.entity.player.EntityPlayerMP
+Import: net.minecraft.item.ItemStack
+Import: ru.justagod.cutter.GradleSide
+Import: ru.justagod.cutter.GradleSideOnly
+Import: ru.will0376.cases.server.json.ItemStackAdapter
+Import: ru.will0376.cases.server.json.MaterialData
+Import: java.io.File
+Import: java.io.FileWriter
+Import: java.io.IOException
+Import: java.lang.reflect.Type
+Import: java.util.HashMap
+Import: java.util.List
+Import: java.util.Map
+End  Processing: ru/will0376/cases/server/JCases.java
+
+Start Processing: ru/will0376/cases/server/json/Enchants.java
+FOUND CONSTR method ru/will0376/cases/server/json/Enchants/Enchants (II)V ru/will0376/cases/server/json/Enchants
+End  Processing: ru/will0376/cases/server/json/Enchants.java
+
+Start Processing: ru/will0376/cases/server/json/ItemStackAdapter.java
+Rename method net/minecraft/item/ItemStack/getCount ()I[1799,1807]::getCount->func_190916_E
+Rename method net/minecraft/item/ItemStack/getDisplayName ()Ljava/lang/String;[1864,1878]::getDisplayName->func_82833_r
+Import: com.google.common.reflect.TypeToken
+Import: com.google.gson.*
+Import: net.minecraft.item.ItemStack
+Import: ru.justagod.cutter.GradleSide
+Import: ru.justagod.cutter.GradleSideOnly
+Import: ru.will0376.cases.server.ItemStackBuilder
+Import: java.lang.reflect.Type
+Import: java.util.ArrayList
+Import: java.util.List
+End  Processing: ru/will0376/cases/server/json/ItemStackAdapter.java
+
+Start Processing: ru/will0376/cases/server/json/MaterialData.java
+Rename method net/minecraft/item/Item/getByNameOrId (Ljava/lang/String;)Lnet/minecraft/item/Item;[649,662]::getByNameOrId->func_111206_d
+Rename field net/minecraft/init/Items/AIR[705,708]::AIR->field_190931_a
+Rename field net/minecraft/init/Items/AIR[828,831]::AIR->field_190931_a
+Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[1147,1154]::getItem->func_77973_b
+Rename method net/minecraft/item/ItemStack/getMetadata ()I[1217,1228]::getMetadata->func_77960_j
+Import: com.google.gson.*
+Import: net.minecraft.init.Items
+Import: net.minecraft.item.Item
+Import: net.minecraft.item.ItemStack
+Import: ru.justagod.cutter.GradleSide
+Import: ru.justagod.cutter.GradleSideOnly
+Import: java.lang.reflect.Type
+End  Processing: ru/will0376/cases/server/json/MaterialData.java
+

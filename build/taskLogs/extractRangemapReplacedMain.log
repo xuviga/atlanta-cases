@@ -1,0 +1,82 @@
+Unsupposrted library path: C:\Users\XuViGaN\Desktop\atlanta-cases\cases\build\classes\java\api
+Unsupposrted library path: C:\Users\XuViGaN\Desktop\atlanta-cases\cases\build\resources\api
+Symbol range map extraction starting
+Processing 26 files
+startProcessing "ru/will0376/cases/Cases.java" md5: 42634ff2ff51b244bf8ced2be35a5ffd
+endProcessing "ru/will0376/cases/Cases.java"
+
+startProcessing "ru/will0376/cases/ColorHelper.java" md5: dc856d5c00bfb8b6bdc7caf78c7f5423
+endProcessing "ru/will0376/cases/ColorHelper.java"
+
+startProcessing "ru/will0376/cases/Events.java" md5: 5ef1569c91cfaca62d56239e6fc230cd
+endProcessing "ru/will0376/cases/Events.java"
+
+startProcessing "ru/will0376/cases/Rolling.java" md5: 068cecbe3b29bfb1d10662e168173f2d
+endProcessing "ru/will0376/cases/Rolling.java"
+
+startProcessing "ru/will0376/cases/Strings.java" md5: 3c4cc91e21a58bc8138345630b07a913
+endProcessing "ru/will0376/cases/Strings.java"
+
+startProcessing "ru/will0376/cases/gui/GuiCaseView.java" md5: a99bc3409003454fd5cbdea69efefef9
+endProcessing "ru/will0376/cases/gui/GuiCaseView.java"
+
+startProcessing "ru/will0376/cases/gui/GuiCaseWon.java" md5: 1b75c34d1a23f668d05d5398879f638e
+endProcessing "ru/will0376/cases/gui/GuiCaseWon.java"
+
+startProcessing "ru/will0376/cases/gui/GuiCasesShop.java" md5: dafb17fb23bd05e6327eff76fc68ffee
+endProcessing "ru/will0376/cases/gui/GuiCasesShop.java"
+
+startProcessing "ru/will0376/cases/gui/MPGui.java" md5: df8a3cb497919d778fab58d0a28955e7
+endProcessing "ru/will0376/cases/gui/MPGui.java"
+
+startProcessing "ru/will0376/cases/model/ModelGuiCase.java" md5: df076d4fc56f0e31901bae78b548cb3f
+endProcessing "ru/will0376/cases/model/ModelGuiCase.java"
+
+startProcessing "ru/will0376/cases/model/ModelItemCase.java" md5: 80efa1fa88f30970d1b2f7e251a4ccc6
+endProcessing "ru/will0376/cases/model/ModelItemCase.java"
+
+startProcessing "ru/will0376/cases/network/CasesListPacket.java" md5: 8f77030158299b07276c9a9ae0616925
+endProcessing "ru/will0376/cases/network/CasesListPacket.java"
+
+startProcessing "ru/will0376/cases/network/CasesMainPacket.java" md5: bb826567b8365416759df1ddff429798
+endProcessing "ru/will0376/cases/network/CasesMainPacket.java"
+
+startProcessing "ru/will0376/cases/network/CasesViewPacket.java" md5: 662ef1b69d73103edacb9a5810e32484
+endProcessing "ru/will0376/cases/network/CasesViewPacket.java"
+
+startProcessing "ru/will0376/cases/network/PacketsDecoder.java" md5: e26891a011d96746f6ba3be235763099
+endProcessing "ru/will0376/cases/network/PacketsDecoder.java"
+
+startProcessing "ru/will0376/cases/network/Recieve.java" md5: 55a3e1c69bb64c4b33339f09ef45715a
+endProcessing "ru/will0376/cases/network/Recieve.java"
+
+startProcessing "ru/will0376/cases/pojo/Case.java" md5: 1c7a74f44708652c77dac94f7956c599
+endProcessing "ru/will0376/cases/pojo/Case.java"
+
+startProcessing "ru/will0376/cases/pojo/CaseItem.java" md5: c4436285702186d78b02786905b993d1
+endProcessing "ru/will0376/cases/pojo/CaseItem.java"
+
+startProcessing "ru/will0376/cases/server/Comma.java" md5: b86bc5a41a4bdc489ab5e38b7cd98b50
+endProcessing "ru/will0376/cases/server/Comma.java"
+
+startProcessing "ru/will0376/cases/server/ItemStackBuilder.java" md5: 190acc9fafb627c9d1cf241c20f30a68
+endProcessing "ru/will0376/cases/server/ItemStackBuilder.java"
+
+startProcessing "ru/will0376/cases/server/JCase.java" md5: ae61ab49f6e1a8e369a3b4ad3051a444
+endProcessing "ru/will0376/cases/server/JCase.java"
+
+startProcessing "ru/will0376/cases/server/JCaseItem.java" md5: ad0396cdcf5f011824cf09fee38edaaf
+endProcessing "ru/will0376/cases/server/JCaseItem.java"
+
+startProcessing "ru/will0376/cases/server/JCases.java" md5: d2ba8c99469a99bae6be87897c8ce5a0
+endProcessing "ru/will0376/cases/server/JCases.java"
+
+startProcessing "ru/will0376/cases/server/json/Enchants.java" md5: bcf32abdb66661c428c3556541a708ea
+endProcessing "ru/will0376/cases/server/json/Enchants.java"
+
+startProcessing "ru/will0376/cases/server/json/ItemStackAdapter.java" md5: 4792e16aecd56758dbfa83c8025685b4
+endProcessing "ru/will0376/cases/server/json/ItemStackAdapter.java"
+
+startProcessing "ru/will0376/cases/server/json/MaterialData.java" md5: 8e3ba3d5e43e3801b957c14fb3d2a2e5
+endProcessing "ru/will0376/cases/server/json/MaterialData.java"
+
