@@ -26,6 +26,7 @@ dependencies {
     implementation files('/lib/iMine.jar')
     implementation files('/lib/LuckPerms-Bukkit-5.1.87.jar')
     implementation files('/lib/vault.jar')
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.0'
 }
 sourceCompatibility = '11'
 targetCompatibility = '11'

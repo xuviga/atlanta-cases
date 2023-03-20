@@ -3,6 +3,7 @@ package org.xuvigan.atlantacases;
 import com.google.common.io.ByteArrayDataOutput;
 import com.google.common.io.ByteStreams;
 
+import java.io.File;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -21,7 +22,8 @@ import org.bukkit.permissions.Permission;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 import ru.imine.shared.util.Discord;
-import org.xuvigan.atlantacases.CasePriceManager;
+import java.io.IOException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 
 public class PluginMain extends JavaPlugin implements Listener {
@@ -82,12 +84,31 @@ public class PluginMain extends JavaPlugin implements Listener {
         Bukkit.getMessenger().registerOutgoingPluginChannel(this, "CasesListChanel");
         Bukkit.getMessenger().registerOutgoingPluginChannel(this, "CasesShopChanel");
         Bukkit.getMessenger().registerOutgoingPluginChannel(this, "CasesCurChanel");
-        this.config = this.getConfig();
-        this.getLogger().info("Case item drop 1 chance set to - " + this.config.getInt("Chance1"));
-        this.getLogger().info("Case item drop 2 chance set to - " + this.config.getInt("Chance2"));
-        this.getLogger().info("Case item drop 3 chance set to - " + this.config.getInt("Chance3"));
-        this.getLogger().info("Case item drop 4 chance set to - " + this.config.getInt("Chance4"));
-        this.getLogger().info("Case item drop 5 chance set to - " + this.config.getInt("Chance5"));
+
+        // Load configuration from JSON file
+        ObjectMapper mapper = new ObjectMapper();
+        Config config;
+        try {
+            config = mapper.readValue(new File(getDataFolder(), "config.json"), Config.class);
+        } catch (IOException e) {
+            // If the file doesn't exist or can't be read, use default values
+            config = new Config();
+            config.setDatabaseUrl("jdbc:mysql://localhost:3306/mydatabase");
+            config.setDatabaseUsername("myusername");
+            config.setDatabasePassword("mypassword");
+            config.setDebug(false);
+            config.setLogLevel("INFO");
+            config.setMaxConnections(10);
+        }
+
+        // Write default configuration to file if it doesn't exist
+        if (!new File(getDataFolder(), "config.json").exists()) {
+            try {
+                mapper.writerWithDefaultPrettyPrinter().writeValue(new File(getDataFolder(), "config.json"), config);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     public void onDisable() {
