@@ -31,5 +31,10 @@
       <option name="name" value="forge" />
       <option name="url" value="https://maven.minecraftforge.net" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="mcp_archive" />
+      <option name="name" value="mcp_archive" />
+      <option name="url" value="https://github.com/Aizistral-Studios/MCP-Archive/raw/dungeon-master/" />
+    </remote-repository>
   </component>
 </project>

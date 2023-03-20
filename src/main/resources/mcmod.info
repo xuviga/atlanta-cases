@@ -3,12 +3,12 @@
     "modid": "cases",
     "name": "Cases",
     "description": "",
-    "version": "${version}",
-    "mcversion": "${mcversion}",
+    "version": "2.0.0",
+    "mcversion": "1.12.2",
     "url": "",
     "updateUrl": "",
     "authorList": [
-      "Will0376"
+      "XuViGaN"
     ],
     "credits": "",
     "logoFile": "",

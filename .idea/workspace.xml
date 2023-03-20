@@ -5,58 +5,62 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1375c105-193b-47d6-bd3f-ff44ceb9ee74" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/Cases.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/ColorHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/Events.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/Rolling.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/Strings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/gui/GuiCaseView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/gui/GuiCaseWon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/gui/GuiCasesShop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/gui/MPGui.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/model/ModelGuiCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/model/ModelItemCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/network/CasesListPacket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/network/CasesMainPacket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/network/CasesViewPacket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/network/PacketsDecoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/network/Recieve.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/pojo/Case.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/pojo/CaseItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/server/Comma.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/server/ItemStackBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/server/JCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/server/JCaseItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/server/JCases.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/server/json/Enchants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/server/json/ItemStackAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/server/json/MaterialData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/cases/sounds.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/cases/sounds/rolling.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/cases/textures/gui/case.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/cases/textures/gui/case.pngba" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/cases/textures/gui/caseshoptexture.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/cases/textures/gui/caseshoptexturecw.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/cases/textures/gui/caseshoptexturel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/cases/textures/gui/casesopened.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/cases/textures/gui/opctexture.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/cases/textures/gui/opctextureu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/cases/textures/scroll.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mcmod.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/pack.mcmeta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/gradle.log" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/gradle.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/will0376/cases/Cases.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/will0376/cases/ColorHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/will0376/cases/Events.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/will0376/cases/Rolling.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/will0376/cases/Strings.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/will0376/cases/gui/GuiCaseView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/will0376/cases/gui/GuiCaseWon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/will0376/cases/gui/GuiCasesShop.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/will0376/cases/gui/MPGui$TextPosition.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/will0376/cases/gui/MPGui$Timing.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/will0376/cases/gui/MPGui.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/will0376/cases/model/ModelGuiCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/will0376/cases/model/ModelItemCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/will0376/cases/network/CasesListPacket$Handler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/will0376/cases/network/CasesListPacket.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/will0376/cases/network/CasesMainPacket$Handler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/will0376/cases/network/CasesMainPacket.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/will0376/cases/network/CasesViewPacket$Handler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/will0376/cases/network/CasesViewPacket.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/will0376/cases/network/PacketsDecoder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/will0376/cases/network/Recieve.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/will0376/cases/pojo/Case.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/will0376/cases/pojo/CaseItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/will0376/cases/server/Comma.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/will0376/cases/server/ItemStackBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/will0376/cases/server/JCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/will0376/cases/server/JCaseItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/will0376/cases/server/JCases$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/will0376/cases/server/JCases$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/will0376/cases/server/JCases.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/will0376/cases/server/json/Enchants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/will0376/cases/server/json/ItemStackAdapter$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/will0376/cases/server/json/ItemStackAdapter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/will0376/cases/server/json/MaterialData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sources/main/java/ru/will0376/cases/Cases.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/ru/will0376/cases/Cases.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sources/main/java/ru/will0376/cases/network/CasesMainPacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/ru/will0376/cases/network/CasesMainPacket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/decompileMc/forge-1.12.2-14.23.5.2800-srgBin.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/decompileMc/forge-1.12.2-14.23.5.2800-srgBin.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/deobfMcMCP/deobfed.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/deobfMcMCP/deobfed.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/deobfMcSRG/deobfed.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/deobfMcSRG/deobfed.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/xuvigan/atlantacases/Case.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/xuvigan/atlantacases/CaseItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/xuvigan/atlantacases/MessageHelper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/xuvigan/atlantacases/PluginMain.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/Cases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/will0376/cases/Cases.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mcmod.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mcmod.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,9 +78,40 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="cases" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="cases" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="cases" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="cases" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build setup" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="cases" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="forgegradle" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -86,6 +121,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2NICVCwZ8im5I7vWZ75pWMxPuFZ" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -94,17 +132,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Gradle.cases [setupDecompWorkspace]">
-    <configuration name="cases [buildAll]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+}</component>
+  <component name="RunManager" selected="Gradle.cases [buildDependents]">
+    <configuration name="Minecraft Client" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="GradleStart" />
+      <module name="cases_main" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../cases\run" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Minecraft Server" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="GradleStartServer" />
+      <module name="cases_main" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../cases\run" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="cases [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -115,7 +179,49 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="buildAll" />
+            <option value="buildDependents" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="cases [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="dependencies" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="cases [init]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="init" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -146,10 +252,34 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="cases [setupDevWorkspace]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="setupDevWorkspace" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.cases [buildDependents]" />
+        <item itemvalue="Gradle.cases [init]" />
+        <item itemvalue="Gradle.cases [setupDevWorkspace]" />
+        <item itemvalue="Gradle.cases [dependencies]" />
         <item itemvalue="Gradle.cases [setupDecompWorkspace]" />
-        <item itemvalue="Gradle.cases [buildAll]" />
       </list>
     </recent_temporary>
   </component>
@@ -163,6 +293,8 @@
       <updated>1679342235440</updated>
       <workItem from="1679342237746" duration="72000" />
       <workItem from="1679342360293" duration="118000" />
+      <workItem from="1679343131181" duration="1230000" />
+      <workItem from="1679344399779" duration="57000" />
     </task>
     <servers />
   </component>

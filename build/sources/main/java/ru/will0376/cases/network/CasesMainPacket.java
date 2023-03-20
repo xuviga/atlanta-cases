@@ -29,6 +29,11 @@ public class CasesMainPacket implements IMessage {
 
 	public static class Handler implements IMessageHandler<CasesMainPacket, IMessage> {
 		public IMessage onMessage(CasesMainPacket message, MessageContext ctx) {
+			if(FMLCommonHandler.instance().getSide().isClient()){logic(message, ctx);};
+			return null;
+		}
+		@SideOnly(Side.CLIENT)
+		public void logic(CasesMainPacket message, MessageContext ctx) {
 			if (message.text.equals("Clear")) {
 				Recieve.CASES_LIST = "";
 				Recieve.CURRENT_CASE_ITEMS_LIST = "";
@@ -58,7 +63,6 @@ public class CasesMainPacket implements IMessage {
 			if (message.text.equals("CloseGui")) {
 				Minecraft.getMinecraft().addScheduledTask(() -> Minecraft.getMinecraft().displayGuiScreen(null));
 			}
-			return null;
 		}
 	}
 }
