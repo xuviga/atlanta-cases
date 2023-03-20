@@ -1,19 +1,19 @@
-package org.xuvigan.atlantacases;
+//Deobfuscated with https://github.com/SimplyProgrammer/Minecraft-Deobfuscator3000 using mappings "C:\Users\XuViGaN\Desktop\1.12 stable mappings"!
 
-import org.bukkit.event.EventHandler;
-import org.bukkit.event.Listener;
+//Decompiled by Procyon!
 
-public class CaseItem implements Listener {
+package com.mayakplay.doge;
 
-    private final int id;
-    private final int meta;
-    private final int rarity;
-    private final int minStackSize;
-    private final int maxStackSize;
-    private final int caseId;
-
-
-    public CaseItem(int id, int meta, int rarity, int minStackSize, int maxStackSize, int caseId) {
+public class CaseItem
+{
+    private int id;
+    private int meta;
+    private int rarity;
+    private int minStackSize;
+    private int maxStackSize;
+    private int caseId;
+    
+    public CaseItem(final int id, final int meta, final int rarity, final int minStackSize, final int maxStackSize, final int caseId) {
         this.id = id;
         this.meta = meta;
         this.rarity = rarity;
@@ -21,29 +21,28 @@ public class CaseItem implements Listener {
         this.maxStackSize = maxStackSize;
         this.caseId = caseId;
     }
-
+    
     public int getId() {
         return this.id;
     }
-
+    
     public int getMeta() {
         return this.meta;
     }
-
+    
     public int getRarity() {
         return this.rarity;
     }
-
+    
     public int getMinStackSize() {
         return this.minStackSize;
     }
-
+    
     public int getMaxStackSize() {
         return this.maxStackSize;
     }
-@EventHandler
+    
     public int getCaseId() {
         return this.caseId;
     }
-
 }

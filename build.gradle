@@ -22,6 +22,7 @@ repositories {
 
 
 dependencies {
+    implementation 'org.jetbrains:annotations:23.0.0'
     compileOnly "org.spigotmc:spigot-api:1.12.2-R0.1-SNAPSHOT"
     implementation files('/lib/iMine.jar')
     implementation files('/lib/LuckPerms-Bukkit-5.1.87.jar')

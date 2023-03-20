@@ -1,5 +1,5 @@
-name: Atlanta-cases
-main: org.xuvigan.atlantacases.PluginMain
+name: VedroGovna
+main: com.mayakplay.doge.PluginMain
 version: 1
 commands:
    mpcaseshop:
